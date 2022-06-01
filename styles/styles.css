@@ -51,14 +51,15 @@ body {
   height: 37px;
   background: #756157;
   border-radius: 4px;
-  position: absolute;
   color: #FFFFFF;
+  border: none;
 }
 
 .main_image{
-  background-image: url("images/background_index.jpg");
-  width: 1200px;
-  height: 485px;
+  background-color: #000000;
+  background-image: url("../images/index_background.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
 }
 
 .main_content_title{
@@ -79,11 +80,12 @@ body {
   color: #333333;
 }
 
+/* advantages */
 .advantages_item{
   width: 400px;
   height: 384px;
 }
-/* advantages */
+
 .advantages_title{
 font-family: inherit;
 font-weight: 700;
@@ -120,6 +122,129 @@ color: #000000;
   color: #FFFFFF;
 }
 
+.advantages_description.write{
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  color: #FFFFFF;
+}
 
 
+/*search*/
 
+.search_title{
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+  }
+
+  .search_description{
+    font-family: inherit;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+    color: #333333;
+  }
+
+  .search_link{
+    font-family: inherit;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 36px;
+    align-items: center;
+    text-align: Center;
+    text-decoration: none;
+    text-transform: uppercase;
+    background: #756157;
+     border-radius: 4px;
+    color: #FFFFFF;
+  }
+
+  /*form*/
+
+.subscribe{
+  background-color: #000000;
+  background-image: url("../images/background_form.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  color: #FFFFFF;
+}
+
+.subscribe_title{
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  color: inherit;
+}
+
+.subscribe_description{
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+  color: inherit;
+}
+
+input[type="email"]{
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  width: 600px;
+  height: 60px;
+  border-radius: 10px 0px 0px 10px;
+  color: #000000;
+  background: #F2F2F2;
+  border: none;
+}
+
+
+.form_button{
+  font-family: inherit;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 36px;
+  text-align: Center;
+  text-transform: uppercase;
+  width: 200px;
+  height: 60px;
+  background: #82B3D3;
+  border-radius: 0px 10px 10px 0px;
+  color: #FFFFFF;
+  border: none;
+}
+
+  /*footer*/
+
+.page_footer{
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.page_footer a {
+  color: #000000;
+  text-decoration: none;
+}
+
+.footer_contact_address_phone {
+  font-family: inherit;
+  font-size: 40px;
+  line-height: 40px;
+  font-weight: 400;
+  text-align: Center;
+  text-transform: uppercase;
+  color: #000000;
+
+}
