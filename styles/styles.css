@@ -22,12 +22,13 @@ body {
   background-color: #FFFFFF;
 }
 
-/* Pages */
+/* цвет шапки*/
 .page_header{
   color: #000000 ;
   background: #FFFFFF;
 }
 
+/* навигация шапки*/
 .navigation_item_link{
   font-family: "PT Sans", sans-serif;
   font-size: 20px;
@@ -39,6 +40,7 @@ body {
   text-transform: capitalize;
 }
 
+/* кнопка шапки*/
 .header_button{
   font-family: inherit;
   font-size: 16px;
@@ -55,13 +57,15 @@ body {
   border: none;
 }
 
+/* фоновое изображение main*/
 .main_image{
   background-color: #000000;
   background-image: url("../images/index_background.jpg");
-  background-size: 100% auto;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
+/* заголовок main*/
 .main_content_title{
   font-weight: 700;
   font-size: 30px;
@@ -71,6 +75,7 @@ body {
   color: #000000;
 }
 
+/* описание main*/
 .main_content_description{
   font-family: inherit;
   font-weight: 400;
@@ -80,11 +85,8 @@ body {
   color: #333333;
 }
 
-/* advantages */
-.advantages_item{
-  width: 400px;
-  height: 384px;
-}
+
+/* преимущества */
 
 .advantages_title{
 font-family: inherit;
@@ -105,23 +107,28 @@ color: #000000;
   color: #333333;
 }
 
+/* голубой фон*/
 .blue{
   background: #82B3D3;
 
 }
 
+/* голубой фон с прозрачностью 12%*/
 .opacity_blue{
   background: rgba(131, 179, 211, 0.12);
 }
 
+/* голубой фон с прозрачностью 20%*/
 .opacity_blue_darker{
   background: rgba(131, 179, 211, 0.2);
 }
 
+/* цвет заголовка для голубого фона*/
 .write{
   color: #FFFFFF;
 }
 
+/* цвет описания для голубого фона*/
 .advantages_description.write{
   font-family: inherit;
   font-weight: 400;
@@ -131,9 +138,16 @@ color: #000000;
   color: #FFFFFF;
 }
 
+/* ненумерованный список - скрыто*/
+.footer_social_list,
+.navigation_list,
+.advantages_list,
+.advantages_list_city{
+  list-style-type: none;
 
-/*search*/
+}
 
+/*поиск - заголовок*/
 .search_title{
   font-family: inherit;
   font-weight: 700;
@@ -144,6 +158,7 @@ color: #000000;
   color: #000000;
   }
 
+  /*поиск - описание*/
   .search_description{
     font-family: inherit;
     font-weight: 400;
@@ -153,6 +168,7 @@ color: #000000;
     color: #333333;
   }
 
+  /*кнопка поиска*/
   .search_link{
     font-family: inherit;
     font-size: 20px;
@@ -167,16 +183,17 @@ color: #000000;
     color: #FFFFFF;
   }
 
-  /*form*/
 
+  /*фон формы*/
 .subscribe{
   background-color: #000000;
   background-image: url("../images/background_form.jpg");
-  background-size: 100% auto;
+  background-size: cover;
   background-repeat: no-repeat;
   color: #FFFFFF;
 }
 
+/*заголовок формы*/
 .subscribe_title{
   font-family: inherit;
   font-weight: 700;
@@ -187,6 +204,7 @@ color: #000000;
   color: inherit;
 }
 
+/*описание формы*/
 .subscribe_description{
   font-family: inherit;
   font-weight: 400;
@@ -196,6 +214,7 @@ color: #000000;
   color: inherit;
 }
 
+/*поле ввода данных*/
 input[type="email"]{
   font-family: inherit;
   font-weight: 400;
@@ -210,7 +229,7 @@ input[type="email"]{
   border: none;
 }
 
-
+/*кнопка формы*/
 .form_button{
   font-family: inherit;
   font-size: 20px;
@@ -226,18 +245,19 @@ input[type="email"]{
   border: none;
 }
 
-  /*footer*/
-
+  /*цвета футера*/
 .page_footer{
   color: #000000;
   background-color: #ffffff;
 }
 
+/*ссылки футера*/
 .page_footer a {
   color: #000000;
   text-decoration: none;
 }
 
+/*телефон*/
 .footer_contact_address_phone {
   font-family: inherit;
   font-size: 40px;
