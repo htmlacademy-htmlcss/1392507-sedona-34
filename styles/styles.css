@@ -57,6 +57,12 @@ body {
   border: none;
 }
 
+/* текст на фоновом изображении*/
+.main_image_welcome{
+  display:block;
+  margin:auto;
+  }
+
 /* фоновое изображение main*/
 .main_image{
   background-color: #000000;
@@ -139,6 +145,7 @@ color: #000000;
 }
 
 /* ненумерованный список - скрыто*/
+.hotel_list,
 .footer_social_list,
 .navigation_list,
 .advantages_list,

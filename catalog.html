@@ -4,9 +4,11 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
+  <link rel="stylesheet" href="styles/styles.css">
 </head>
 
 <body>
+  <!--шапка-->
   <header class="page_header">
     <nav class="navigation">
       <a class="navigation_logo" href="index.html">
@@ -29,6 +31,7 @@
           </a>
         </li>
       </ul>
+      <!--список с иконками-->
       <ul class="navigation_list navigation_user">
         <li class="navigation_item">
           <a class="navigation_item_link" href="#">
@@ -45,13 +48,15 @@
           </a>
         </li>
       </ul>
-      <button class="button" type="button">
+      <!--кнопка-->
+      <button class="header_button" type="button">
         Хочу сюда!
       </button>
     </nav>
   </header>
 
   <main class="main_inner">
+    <!--хлебные крошки-->
     <header class="inner_header">
       <h1 class="inner_header_title">
         Гостиницы Седоны
@@ -72,7 +77,7 @@
         </li>
       </ul>
     </header>
-
+      <!--фильтры гостиниц-->
     <section class="catalog_hotel">
       <h2 class="visually_hidden">
         Фильтры гостиниц
@@ -127,7 +132,7 @@
             </li>
           </ul>
         </fieldset>
-
+        <!--кнопки-->
         <button class="button" type="submit">
           Применить
         </button>
@@ -136,7 +141,7 @@
         </button>
       </form>
     </section>
-
+      <!--фильтры-->
     <section class="search_hotel">
       <h2 class="select_sorting_title">
         Найдено гостиниц: 38
@@ -172,6 +177,7 @@
       </a>
 
       <ul class="hotel_list">
+        <!--1 отель-->
         <li class="hotel_card">
           <img class="hotel_card_img" src="images/hotel_amara_resort.jpg" width="300" height="211"
             alt="Гостиница Amara Resort & Spa.">
@@ -195,7 +201,7 @@
           <span class="hotel_card_rating">
             Рейтинг: 8,5
           </span>
-
+          <!--2 отель-->
         <li class="hotel_card">
           <img class="hotel_card_img" src="images/hotel_villas_at_poco_diablo.jpg" width="300" height="211"
             alt="Гостиница Villas at Poco Diablo.">
@@ -219,7 +225,7 @@
           <span class="hotel_card_rating">
             Рейтинг: 9,2
           </span>
-
+          <!--3 отель-->
         <li class="hotel_card">
           <img class="hotel_card_img" src="images/hotel_desert_quail_inn.jpg" width="300" height="211"
             alt="Гостиница Desert Quail Inn.">
@@ -243,7 +249,7 @@
           <span class="hotel_card_rating">
             Рейтинг: 6,9
           </span>
-
+          <!--4 отель-->
         <li class="hotel_card">
           <img class="hotel_card_img" src="images/hotel_greentree_inn.jpg" width="300" height="211"
             alt="Гостиница GreenTree Inn.">
@@ -269,7 +275,7 @@
           </span>
         </li>
       </ul>
-
+      <!--пагинация-->
       <ul class="pagination">
         <li class="pagination-item">
           <a class="pagination-link pagination-current">
@@ -307,7 +313,7 @@
           </a>
         </li>
       </ul>
-
+      <!--фильтр гостиниц на странице-->
       <label class="number_page">
         Гостиниц на странице:
       </label>
@@ -321,7 +327,7 @@
       </select>
     </section>
   </main>
-
+    <!--футер-->
   <footer class="page_footer">
     <section class="footer_social">
       <h2 class="visually_hidden">
