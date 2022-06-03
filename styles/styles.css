@@ -162,6 +162,8 @@ body {
 .catalog_filter_list,
 .pagination {
   list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
 /*поиск - заголовок*/
