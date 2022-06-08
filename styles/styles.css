@@ -15,6 +15,10 @@
 }
 
 body {
+  margin: 0; /* сбрасываем внешние отступы*/
+  display: flex;
+  flex-direction: column; /* меняем ось на сверху вниз*/
+  min-height: 100%; /* чтобы размер тега равнялся размеру окна браузера*/
   font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-size: 18px;
@@ -27,6 +31,26 @@ body {
 .page_header {
   color: #000000;
   background: #FFFFFF;
+}
+
+/* задаём размеры навигации*/
+.navigation {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+/* задаём размеры первому списку*/
+.navigation_list {
+  width: 450px;
+  margin: 0;
+  padding: 0;
+}
+
+/* задаём размеры второму списку*/
+.navigation_user_button {
+  max-width: 350px;
+  margin-left: auto;
 }
 
 /* навигация шапки*/
@@ -60,10 +84,15 @@ body {
   border: none;
 }
 
+.main_container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
 /* текст на фоновом изображении*/
 .main_image_welcome {
   display: block;
-  margin: auto;
+  margin: 0 auto;
 }
 
 /* фоновое изображение main*/
@@ -97,6 +126,10 @@ body {
   color: #333333;
 }
 
+.advantages_item {
+  display: flex;
+
+}
 
 /* преимущества */
 
@@ -535,4 +568,13 @@ input[type="email"] {
 .pagination-item a {
   color: #FFFFFF;
   text-decoration: none;
+}
+
+html {
+height: 100%;
+}
+
+/*делаем блок жадным*/
+.main_container {
+flex-wrap: 1;
 }
