@@ -33,34 +33,34 @@
       </ul>
       <!--список с иконками-->
       <div class="navigation_user_button">
-      <ul class="navigation_list navigation_user">
-        <li class="navigation_item">
-          <a class="navigation_item_link" href="#">
-            <span class="visually_hidden">
-              Поиск
-            </span>
-          </a>
-        </li>
-        <li class="navigation_item">
-          <a class="navigation_item_link" href="#">
-            <span class="visually_hidden">
-              Избранное
-            </span>
-          </a>
-        </li>
-      </ul>
-      <!--кнопка-->
-      <button class="header_button" type="button">
-        Хочу сюда!
-      </button>
-    </div>
+        <ul class="navigation_list navigation_user">
+          <li class="navigation_item">
+            <a class="navigation_item_link" href="#">
+              <span class="visually_hidden">
+                Поиск
+              </span>
+            </a>
+          </li>
+          <li class="navigation_item">
+            <a class="navigation_item_link" href="#">
+              <span class="visually_hidden">
+                Избранное
+              </span>
+            </a>
+          </li>
+        </ul>
+        <!--кнопка-->
+        <button class="header_button" type="button">
+          Хочу сюда!
+        </button>
+      </div>
     </nav>
   </header>
 
-  <main class="main_inner">
+
+  <main class="main_inner main_container">
     <!--хлебные крошки-->
     <div class="background_catalog">
-      <div class="main_conteiner_catalog">
       <header class="inner_header">
         <h1 class="inner_header_title">
           Гостиницы Седоны
@@ -81,71 +81,74 @@
           </li>
         </ul>
       </header>
-      <!--фильтры гостиниц-->
-      <section class="catalog_hotel">
-        <h2 class="visually_hidden">
-          Фильтры гостиниц
-        </h2>
-        <form class="catalog_filter" action="https://echo.htmlacademy.ru/" method="get">
-          <fieldset class="catalog_filter_group">
-            <legend class="catalog_filter_title">
-              Инфраструктура:
-            </legend>
-            <ul class="catalog_filter_list">
-              <li class="catalog_filter_item">
-                <label class="control">
-                  <input class="control_input" type="checkbox" name="swimming_pool" checked>Бассейн
-                </label>
-              </li>
 
-              <li class="catalog_filter_item">
-                <label class="control">
-                  <input class="control_input" type="checkbox" name="parking" checked>Парковка
-                </label>
-              </li>
+      <div class="main_conteiner_catalog">
+        <!--фильтры гостиниц-->
+        <section class="catalog_hotel">
+          <h2 class="visually_hidden" hidden>
+            Фильтры гостиниц
+          </h2>
+          <form class="catalog_filter" action="https://echo.htmlacademy.ru/" method="get">
+              <fieldset class="catalog_filter_group">
+                <legend class="catalog_filter_title">
+                  Инфраструктура:
+                </legend>
+                <ul class="catalog_filter_list">
+                  <li class="catalog_filter_item">
+                    <label class="control">
+                      <input class="control_input" type="checkbox" name="swimming_pool" checked>Бассейн
+                    </label>
+                  </li>
 
-              <li class="catalog_filter_item">
-                <label class="control">
-                  <input class="control_input" type="checkbox" name="wi-fi">Wi-Fi
-                </label>
-              </li>
-            </ul>
-          </fieldset>
+                  <li class="catalog_filter_item">
+                    <label class="control">
+                      <input class="control_input" type="checkbox" name="parking" checked>Парковка
+                    </label>
+                  </li>
 
-          <fieldset class="catalog_filter_group">
-            <legend class="catalog_filter_title">
-              Тип жилья:
-            </legend>
-            <ul class="catalog_filter_list">
-              <li class="catalog_filter_item">
-                <label class="control">
-                  <input class="control_input" type="radio" name="type_housing" value="hotel" checked>Гостиница
-                </label>
-              </li>
+                  <li class="catalog_filter_item">
+                    <label class="control">
+                      <input class="control_input" type="checkbox" name="wi-fi">Wi-Fi
+                    </label>
+                  </li>
+                </ul>
+              </fieldset>
 
-              <li class="catalog_filter_item">
-                <label class="control">
-                  <input class="control_input" type="radio" name="type_housing" value="motel">Мотель
-                </label>
-              </li>
+              <fieldset class="catalog_filter_group">
+                <legend class="catalog_filter_title">
+                  Тип жилья:
+                </legend>
+                <ul class="catalog_filter_list">
+                  <li class="catalog_filter_item">
+                    <label class="control">
+                      <input class="control_input" type="radio" name="type_housing" value="hotel" checked>Гостиница
+                    </label>
+                  </li>
 
-              <li class="catalog_filter_item">
-                <label class="control">
-                  <input class="control_input" type="radio" name="type_housing" value="apartaments">Апартаменты
-                </label>
-              </li>
-            </ul>
-          </fieldset>
-          <!--кнопки-->
-          <button class="button_blue" type="submit">
-            Применить
-          </button>
-          <button class="button_remove" type="submit">
-            Сбросить
-          </button>
-        </form>
-      </section>
-    </div>
+                  <li class="catalog_filter_item">
+                    <label class="control">
+                      <input class="control_input" type="radio" name="type_housing" value="motel">Мотель
+                    </label>
+                  </li>
+
+                  <li class="catalog_filter_item">
+                    <label class="control">
+                      <input class="control_input" type="radio" name="type_housing" value="apartaments">Апартаменты
+                    </label>
+                  </li>
+                </ul>
+              </fieldset>
+            </div>
+            <!--кнопки-->
+            <button class="button_blue" type="submit">
+              Применить
+            </button>
+            <button class="button_remove" type="submit">
+              Сбросить
+            </button>
+          </form>
+        </section>
+      </div>
     </div>
 
     <!--фильтры-->
@@ -184,6 +187,7 @@
       </a>
 
       <ul class="hotel_list">
+        <div class="flex_filter">
         <!--1 отель-->
         <li class="hotel_card">
           <img class="hotel_card_img" src="images/hotel_amara_resort.jpg" width="300" height="211"
@@ -281,9 +285,11 @@
             Рейтинг: 5,0
           </span>
         </li>
+      </div>
       </ul>
+
       <!--пагинация-->
-      <div class="section_pagination">
+      <div class="flex_pagination">
         <ul class="pagination">
           <li class="pagination-item">
             <a class="pagination-link pagination-current">
@@ -334,7 +340,6 @@
           </option>
         </select>
       </div>
-    </section>
   </main>
   <!--форма-->
   <section class="subscribe_catalog">
@@ -357,57 +362,58 @@
   <!--футер-->
   <footer class="page_footer">
     <div class="flex_footer">
-    <section class="footer_social">
-      <h2 class="visually_hidden">
-        Социальные сети
-      </h2>
-      <ul class="footer_social_list">
-        <li class="footer_social_item">
-          <a class="button vk" href="https://vk.com/htmlacademy">
-            <span class="visually_hidden">
-              ВКонтакте
-            </span>
-          </a>
-        </li>
+      <section class="footer_social">
+        <h2 class="visually_hidden">
+          Социальные сети
+        </h2>
+        <ul class="footer_social_list">
+          <li class="footer_social_item">
+            <a class="button vk" href="https://vk.com/htmlacademy">
+              <span class="visually_hidden">
+                ВКонтакте
+              </span>
+            </a>
+          </li>
 
-        <li class="footer_social_item">
-          <a class="button tg" href="https://t.me/htmlacademy">
-            <span class="visually_hidden">
-              Телеграм
-            </span>
-          </a>
-        </li>
+          <li class="footer_social_item">
+            <a class="button tg" href="https://t.me/htmlacademy">
+              <span class="visually_hidden">
+                Телеграм
+              </span>
+            </a>
+          </li>
 
-        <li class="footer_social_item">
-          <a class="button youtube" href="https://www.youtube.com/user/htmlacademyru">
-            <span class="visually_hidden">
-              Ютуб
-            </span>
-          </a>
-        </li>
-      </ul>
-    </section>
+          <li class="footer_social_item">
+            <a class="button youtube" href="https://www.youtube.com/user/htmlacademyru">
+              <span class="visually_hidden">
+                Ютуб
+              </span>
+            </a>
+          </li>
+        </ul>
+      </section>
 
-    <section class="footer_contact">
-      <h2 class="visually_hidden">
-        Контакты
-      </h2>
-      <address class="footer_contact_address">
-        <a class="footer_contact_address_phone" href="tel:+78128121212">
-          +7 (812) 812-12-12
+      <section class="footer_contact">
+        <h2 class="visually_hidden">
+          Контакты
+        </h2>
+        <address class="footer_contact_address">
+          <a class="footer_contact_address_phone" href="tel:+78128121212">
+            +7 (812) 812-12-12
+          </a>
+        </address>
+      </section>
+
+      <section class="footer_logo">
+        <h2 class="visually_hidden">
+          Логотип
+        </h2>
+        <a class="footer_logo_link" href="https://htmlacademy.ru/">
+          <img class="footer_logo_image" src="images/logo_html.svg" alt="Логотип HTML академии»." width="115"
+            height="33">
         </a>
-      </address>
-    </section>
-
-    <section class="footer_logo">
-      <h2 class="visually_hidden">
-        Логотип
-      </h2>
-      <a class="footer_logo_link" href="https://htmlacademy.ru/">
-        <img class="footer_logo_image" src="images/logo_html.svg" alt="Логотип HTML академии»." width="115" height="33">
-      </a>
-    </section>
-  </div>
+      </section>
+    </div>
 
   </footer>
 </body>

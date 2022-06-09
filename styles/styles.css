@@ -16,13 +16,16 @@
 
 html {
   height: 100%;
-  }
+}
 
 body {
-  margin: 0; /* сбрасываем внешние отступы*/
+  margin: 0;
+  /* сбрасываем внешние отступы*/
   display: flex;
-  flex-direction: column; /* меняем ось на сверху вниз*/
-  min-height: 100%; /* чтобы размер тега равнялся размеру окна браузера*/
+  flex-direction: column;
+  /* меняем ось на сверху вниз*/
+  min-height: 100%;
+  /* чтобы размер тега равнялся размеру окна браузера*/
   font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-size: 18px;
@@ -95,7 +98,8 @@ body {
 .main_container {
   width: 1200px;
   margin: 0 auto;
-  flex-wrap: 1; /*делаем блок жадным*/
+  flex-wrap: 1;
+  /*делаем блок жадным*/
 }
 
 /* текст на фоновом изображении*/
@@ -363,7 +367,8 @@ input[type="email"] {
   color: #000000;
 }
 
-.flex_footer{
+/*размеры для футера (флекс)*/
+.flex_footer {
   display: flex;
   width: 1200px;
   margin: 0 auto;
@@ -376,7 +381,7 @@ input[type="email"] {
   padding-right: 42px;
 }
 
-.footer_logo{
+.footer_logo {
   padding-left: 42px;
   padding-right: 70px;
 }
@@ -391,18 +396,6 @@ input[type="email"] {
   width: 1200px;
   margin: 0 auto;
 }
-
-/*размеры контейнера с фильтрацией*/
-.main_conteiner_catalog {
-  display: flex;
-  flex-direction: column;
-  width: 1060px;
-  margin: 70px;
-  margin-top: 35px;;
-
-}
-
-
 
 /*заголовок фильтрации*/
 .inner_header_title {
@@ -640,4 +633,31 @@ input[type="email"] {
   text-decoration: none;
 }
 
+.search_hotel {
+  margin: 0 auto;
+}
 
+.flex_filter {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 73px 0 71px;
+}
+
+.subscribe_catalog {
+  margin: 0 auto;
+}
+
+.hotel_card {
+  margin: 0 auto;
+  margin-left: 18px;
+}
+
+.flex_pagination {
+  display: flex;
+  margin: 0 73px 0 71px;
+}
+
+.pagination-item {
+  display: inline;
+  margin-left: 8px;
+}
