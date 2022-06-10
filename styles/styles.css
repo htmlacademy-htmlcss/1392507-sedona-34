@@ -14,7 +14,18 @@
   font-display: swap;
 }
 
+html {
+  height: 100%;
+}
+
 body {
+  margin: 0;
+  /* сбрасываем внешние отступы*/
+  display: flex;
+  flex-direction: column;
+  /* меняем ось на сверху вниз*/
+  min-height: 100%;
+  /* чтобы размер тега равнялся размеру окна браузера*/
   font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-size: 18px;
@@ -23,10 +34,42 @@ body {
   background-color: #FFFFFF;
 }
 
+.conteiner {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
 /* цвет шапки*/
 .page_header {
   color: #000000;
   background: #FFFFFF;
+}
+
+/* задаём размеры навигации*/
+.navigation {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.navigation_page_logo {
+  margin: 0 30px 0 70px;
+}
+
+/* задаём размеры первому списку*/
+.navigation_list {
+  width: 450px;
+  margin: 0;
+  padding: 0;
+}
+
+/* задаём размеры второму списку*/
+.navigation_user_button {
+  max-width: 310px;
+  margin-left: auto;
 }
 
 /* навигация шапки*/
@@ -63,7 +106,7 @@ body {
 /* текст на фоновом изображении*/
 .main_image_welcome {
   display: block;
-  margin: auto;
+  margin: 0 auto;
 }
 
 /* фоновое изображение main*/
@@ -97,8 +140,24 @@ body {
   color: #333333;
 }
 
-
 /* преимущества */
+.advantages_item {
+  display: flex;
+  margin: 0;
+}
+
+.flex_advantages,
+.flex_block_advantages {
+  width: 400px;
+  margin: 0 auto;
+}
+
+/* жилье, еда, сувениры флекс */
+.flex_block {
+  display: flex;
+  justify-content: space-between;
+  width: 1200px;
+}
 
 .advantages_title {
   font-family: inherit;
@@ -164,6 +223,13 @@ body {
   list-style-type: none;
   padding: 0;
   margin: 0;
+}
+
+.hotel_list {
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 /*поиск - заголовок*/
@@ -295,6 +361,25 @@ input[type="email"] {
   color: #000000;
 }
 
+/*размеры для футера (флекс)*/
+.flex_footer {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+.footer_social {
+  width: 190px;
+  padding-left: 70px;
+  padding-right: 42px;
+}
+
+.footer_logo {
+  padding-left: 42px;
+  padding-right: 70px;
+}
+
 /*фон каталога*/
 .background_catalog {
   background-color: #000000;
@@ -302,6 +387,8 @@ input[type="email"] {
   background-size: cover;
   background-repeat: no-repeat;
   color: #FFFFFF;
+  width: 1200px;
+  margin: 0 auto;
 }
 
 /*заголовок фильтрации*/
@@ -312,6 +399,7 @@ input[type="email"] {
   font-size: 60px;
   line-height: 78px;
   color: inherit;
+  width: 495px;
 }
 
 /*хлебные крошки*/
@@ -322,6 +410,7 @@ input[type="email"] {
   font-size: 16px;
   line-height: 21px;
   color: inherit;
+  width: 150px;
 }
 
 /*Ссылка домика в хлебных крошках*/
@@ -535,4 +624,32 @@ input[type="email"] {
 .pagination-item a {
   color: #FFFFFF;
   text-decoration: none;
+}
+
+.search_hotel {
+  margin: 0 auto;
+}
+
+.flex_filter {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 73px 0 71px;
+}
+
+.subscribe_catalog {
+  margin: 0 auto;
+}
+
+.hotel_card {
+  margin: 0 auto;
+  margin-left: 18px;
+}
+
+.flex_pagination {
+  margin: 0 auto;
+}
+
+.pagination-item {
+  display: inline;
+  margin-left: 8px;
 }
