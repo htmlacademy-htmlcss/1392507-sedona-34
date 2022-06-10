@@ -34,6 +34,14 @@ body {
   background-color: #FFFFFF;
 }
 
+.conteiner {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
 /* цвет шапки*/
 .page_header {
   color: #000000;
@@ -95,13 +103,6 @@ body {
   border: none;
 }
 
-.main_container {
-  width: 1200px;
-  margin: 0 auto;
-  flex-wrap: 1;
-  /*делаем блок жадным*/
-}
-
 /* текст на фоновом изображении*/
 .main_image_welcome {
   display: block;
@@ -139,38 +140,24 @@ body {
   color: #333333;
 }
 
-.flex_block {
+/* преимущества */
+.advantages_item {
   display: flex;
-  width: 1200px;
-  padding: 0;
-  justify-content: space-between;
-}
-
-.advantages_list {
-  display: flex;
-  width: 1200px;
-  padding: 0;
-  justify-content: space-between;
-  flex-direction: column;
+  margin: 0;
 }
 
 .flex_advantages,
-.flex_housing,
-.flex_meal,
-.flex_souvenirs,
-.flex_bridge {
+.flex_block_advantages {
   width: 400px;
+  margin: 0 auto;
 }
 
-.flex_block_bridge {
+/* жилье, еда, сувениры флекс */
+.flex_block {
   display: flex;
-  width: 1200px;
-  padding: 0;
   justify-content: space-between;
+  width: 1200px;
 }
-
-
-/* преимущества */
 
 .advantages_title {
   font-family: inherit;
@@ -236,6 +223,13 @@ body {
   list-style-type: none;
   padding: 0;
   margin: 0;
+}
+
+.hotel_list {
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 /*поиск - заголовок*/
@@ -417,7 +411,6 @@ input[type="email"] {
   line-height: 21px;
   color: inherit;
   width: 150px;
-
 }
 
 /*Ссылка домика в хлебных крошках*/
@@ -653,8 +646,7 @@ input[type="email"] {
 }
 
 .flex_pagination {
-  display: flex;
-  margin: 0 73px 0 71px;
+  margin: 0 auto;
 }
 
 .pagination-item {
