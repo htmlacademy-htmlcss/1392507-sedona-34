@@ -10,9 +10,9 @@
 <body>
   <!--шапка-->
   <div class="conteiner">
-    <header>
+    <header class="page_header">
       <nav class="navigation">
-        <a href="index.html">
+        <a class="navigation_logo" href="https://htmlacademy.ru/">
           <img class="navigation_page_logo" alt="Логотип Седона." src="images/logo_sedona.svg" width="139" height="70">
         </a>
         <ul class="navigation_list">
@@ -48,11 +48,15 @@
                 </span>
               </a>
             </li>
+            <!--кнопка-->
+            <li class="navigation_item">
+              <div class="conteiner_link">
+              <a class="header_button" href="#">
+                Хочу сюда!
+              </a>
+            </div>
+            </li>
           </ul>
-          <!--кнопка-->
-          <button class="header_button" type="button">
-            Хочу сюда!
-          </button>
       </nav>
     </header>
 
@@ -74,7 +78,7 @@
 
             <li class="breadcrumbs_item">
               <a class="breadcrumbs_item_link">
-                Гостиницы Седоны
+                Гостиницы
               </a>
             </li>
           </ul>
@@ -147,6 +151,8 @@
       </div>
 
       <!--фильтры-->
+
+      <div class="select_conteiner"></div>
       <section class="search_hotel">
         <h2 class="select_sorting_title">
           Найдено гостиниц: 38
@@ -162,6 +168,7 @@
             Сначала дорогое
           </option>
         </select>
+
 
         <a class="button button_tile_active" href="#">
           <span class="visually-hidden">
@@ -180,6 +187,8 @@
             Список
           </span>
         </a>
+      </div>
+
 
         <ul class="hotel_list">
           <!--1 отель-->
