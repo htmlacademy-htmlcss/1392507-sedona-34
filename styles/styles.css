@@ -105,24 +105,24 @@ body {
   text-transform: capitalize;
 }
 
-.navigation_list .conteiner_link {
+.navigation_conteiner_link {
   min-width: 160px;
-  margin-left: 37px;
-  margin-top: 14px;
-  margin-bottom: 14px;
-  margin-right: 0;
-  padding-left: 0;
-  padding-top: 6px;
+  min-height: 37px;
+  padding-left: 9px;
   padding-right: 9px;
-  padding-bottom: 6px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  margin-top: 14px;
   text-decoration: none;
   align-items: center;
-  text-align: Center;
+  text-align: center;
   text-transform: uppercase;
 }
 
 /* кнопка шапки*/
 .header_button {
+  display: block;
+  padding-top: 8px;
   font-family: inherit;
   font-style: normal;
   font-size: 16px;
@@ -330,7 +330,7 @@ body {
   background: #756157;
   border-radius: 4px;
   align-items: center;
-  text-align: Center;
+  text-align: center;
 }
 
 /*кнопка поиска*/
@@ -754,7 +754,7 @@ input[type="email"] {
   margin-right: 270px;
 }
 
-.pagination .pagination-item {
+.pagination-item {
   display: inline;
 }
 
