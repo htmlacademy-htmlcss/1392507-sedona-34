@@ -15,7 +15,7 @@
 }
 
 
- .visually_hidden {
+.visually_hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -81,13 +81,14 @@ body {
   padding: 0;
 }
 
-.navigation_user{
+.navigation_user {
   display: flex;
   flex-wrap: wrap;
   width: 274px;
   margin: 0;
   padding: 0;
 }
+
 .navigation_list .navigation_user {
   min-width: 46px;
   min-height: 66px;
@@ -453,7 +454,6 @@ input[type="email"] {
   padding-top: 40px;
   padding-bottom: 30px;
   justify-content: space-between;
-
 }
 
 .footer_social {
@@ -713,8 +713,15 @@ input[type="email"] {
   color: #333333;
 }
 
+.subscribe_catalog {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 /*заголовок формы*/
 .subscribe_title_catalog {
+  margin-top: 0;
+  margin-bottom: 29px;
   font-family: inherit;
   font-style: normal;
   font-weight: 700;
@@ -727,6 +734,8 @@ input[type="email"] {
 
 /*описание формы*/
 .subscribe_description_catalog {
+  margin-top: 0;
+  margin-bottom: 46px;
   font-family: inherit;
   font-style: normal;
   font-weight: 400;
@@ -736,24 +745,64 @@ input[type="email"] {
   color: #333333;
 }
 
+.flex_pagination {
+  display: flex;
+  justify-content: space-between;
+  width: 1056px;
+  margin-left: 40px;
+  padding-top: 96px;
+  padding-left: 73px;
+}
+
+.pagination {
+  margin-right: 270px;
+}
+
+.pagination .pagination-item {
+  display: inline;
+}
+
+.pagination-item {
+  margin-left: 8px;
+}
+
+
 /*заголовки отелей*/
 .pagination-item a {
   color: #FFFFFF;
   text-decoration: none;
 }
 
-.catalog_hotel {
-margin-bottom: 62px;
+.number_page {
+  display: block;
+  min-width: 175px;
+  min-height: 22px;
+  margin-right: 51px;
 }
 
-.select_sorting_title{
+.select_control_number {
+  min-width: 160px;
+}
+
+.catalog_hotel {
+  margin-bottom: 62px;
+}
+
+.select_sorting_title {
   min-width: 338px;
   margin-top: 0;
   margin-left: 72px;
   padding-right: 192px;
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+
 }
 
-.select_sorting{
+.select_sorting {
   margin-right: 78px;
 }
 
@@ -763,12 +812,11 @@ margin-bottom: 62px;
   margin: 0 73px 0 71px;
 }
 
-.hotel_list{
+.hotel_list {
   display: flex;
   flex-direction: column;
-  margin-left: 113px;
+  margin-left: 73px;
   margin-top: 56px;
-
 }
 
 .hotel_card {
@@ -776,10 +824,15 @@ margin-bottom: 62px;
   margin-left: 18px;
 }
 
-.pagination-item {
-  display: inline;
-  margin-left: 8px;
-}
-.search_hotel{
+.search_hotel {
   display: flex;
+}
+
+.button:not(:last-child) {
+  padding-right: 8px;
+}
+
+.button {
+  min-width: 48px;
+  min-height: 48px;
 }
