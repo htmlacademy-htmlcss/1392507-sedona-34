@@ -120,7 +120,7 @@ body {
 }
 
 /* кнопка шапки*/
-.header_button {
+.header_button{
   display: block;
   padding-top: 8px;
   font-family: inherit;
@@ -808,14 +808,15 @@ input[type="email"] {
 }
 
 .hotel_list {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 340px 340px 340px;
+  column-gap: 18px;
   margin-left: 73px;
   margin-top: 56px;
 }
 
 .hotel_card {
-  margin-left: 18px;
+  padding: 20px;
 }
 
 .select_conteiner {
@@ -829,4 +830,10 @@ input[type="email"] {
 .button {
   min-width: 48px;
   min-height: 48px;
+}
+
+.hotel_list {
+  display: grid;
+  grid-template-columns: 340px 340px 340px;
+  column-gap: 18px;
 }
