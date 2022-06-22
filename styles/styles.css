@@ -357,6 +357,11 @@ body {
   color: #FFFFFF;
 }
 
+.subscribe_form {
+  margin-left: 200px;
+  padding-bottom: 94px;
+}
+
 /*заголовок формы*/
 .subscribe_title {
   margin-top: 0;
@@ -521,6 +526,10 @@ input[type="email"] {
   margin-right: 26px;
 }
 
+.breadcrumbs_item {
+padding-bottom: 40px;
+}
+
 /*Ссылка домика в хлебных крошках*/
 .breadcrumbs_item a {
   color: #FFFFFF;
@@ -586,22 +595,30 @@ input[type="email"] {
 
 /*заголовки отелей*/
 .hotel_card_title {
+  min-width: 100%;
+  margin: 0;
+  padding-top: 16px;
+  padding-bottom: 16px;
   font-family: inherit;
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
   color: inherit;
+
 }
 
 /*стоимость отелей*/
 .hotel_card_description {
+  min-width: 140px;
+  padding-bottom: 16px;
   font-family: inherit;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
   color: #333333;
+  margin-top: 0;
 }
 
 /*кнопка подробнее*/
@@ -614,7 +631,7 @@ input[type="email"] {
   text-align: Center;
   align-items: center;
   text-transform: uppercase;
-  width: 140px;
+  min-width: 140px;
   height: 37px;
   background: #756157;
   border-radius: 4px;
@@ -624,6 +641,7 @@ input[type="email"] {
 
 /*кнопка в избранное*/
 .button_favourites {
+  padding: 0;
   font-family: inherit;
   font-style: normal;
   font-size: 16px;
@@ -642,6 +660,7 @@ input[type="email"] {
 
 /*кнопка в избранном зеленая*/
 .button_favourites_green {
+  padding: 0;
   font-family: inherit;
   font-style: normal;
   font-size: 16px;
@@ -666,6 +685,7 @@ input[type="email"] {
 
 /*рейтинг*/
 .hotel_card_rating {
+  margin-bottom: 16px;
   font-family: inherit;
   font-style: normal;
   font-size: 16px;
@@ -711,7 +731,6 @@ input[type="email"] {
 
 .subscribe_catalog {
   padding-top: 94px;
-  padding-bottom: 94px;
 }
 
 /*заголовок формы*/
@@ -746,7 +765,6 @@ input[type="email"] {
   justify-content: space-between;
   width: 1056px;
   margin-left: 40px;
-  padding-top: 96px;
   padding-left: 73px;
 }
 
@@ -813,10 +831,15 @@ input[type="email"] {
   column-gap: 18px;
   margin-left: 73px;
   margin-top: 56px;
+  margin-bottom: 96px;
 }
 
 .hotel_card {
   padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
 }
 
 .select_conteiner {
@@ -832,8 +855,21 @@ input[type="email"] {
   min-height: 48px;
 }
 
-.hotel_list {
+.hotel_card_button,
+.button_favourites,
+.button_favourites_green {
+  margin-bottom: 16px;
+}
+
+ .catalog_filter {
   display: grid;
-  grid-template-columns: 340px 340px 340px;
-  column-gap: 18px;
+  grid-template-columns: 150px 146px;
+  column-gap: 70px;
+  margin-left: 70px;
+}
+
+.catalog_filter_group {
+  border-style: none;
+  padding: 0;
+  padding-bottom: 70px;
 }
