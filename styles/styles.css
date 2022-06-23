@@ -85,9 +85,8 @@ body {
 .navigation_user {
   display: flex;
   flex-wrap: wrap;
+  justify-content: right;
   min-width: 371px;
-  margin: 0;
-  padding: 0;
 }
 
 /* навигация шапки*/
@@ -108,8 +107,8 @@ body {
 .navigation_conteiner_link {
   min-width: 160px;
   min-height: 37px;
-  padding-left: 9px;
-  padding-right: 9px;
+  padding-left: 20px;
+  padding-right: 70px;
   padding-top: 4px;
   padding-bottom: 4px;
   margin-top: 14px;
@@ -494,6 +493,7 @@ input[type="email"] {
   color: #FFFFFF;
   width: 1200px;
   margin: 0 auto;
+  padding-top: 35px;
 }
 
 /*заголовок фильтрации*/
@@ -800,12 +800,16 @@ padding-bottom: 40px;
 
 .catalog_hotel {
   margin-bottom: 62px;
+  padding-left: 70px;
+  padding-bottom: 70px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .select_sorting_title {
   min-width: 338px;
   margin-top: 0;
-  margin-left: 72px;
+  padding-left: 72px;
   padding-right: 192px;
   font-family: inherit;
   font-style: normal;
@@ -859,17 +863,4 @@ padding-bottom: 40px;
 .button_favourites,
 .button_favourites_green {
   margin-bottom: 16px;
-}
-
- .catalog_filter {
-  display: grid;
-  grid-template-columns: 150px 146px;
-  column-gap: 70px;
-  margin-left: 70px;
-}
-
-.catalog_filter_group {
-  border-style: none;
-  padding: 0;
-  padding-bottom: 70px;
 }
