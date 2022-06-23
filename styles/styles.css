@@ -82,6 +82,7 @@ body {
   padding: 0;
 }
 
+/* задаём размеры второму списку*/
 .navigation_user {
   display: flex;
   flex-wrap: wrap;
@@ -104,6 +105,7 @@ body {
   text-transform: capitalize;
 }
 
+/* кнопка шапки*/
 .navigation_conteiner_link {
   min-width: 160px;
   min-height: 37px;
@@ -118,8 +120,7 @@ body {
   text-transform: uppercase;
 }
 
-/* кнопка шапки*/
-.header_button{
+.header_button {
   display: block;
   padding-top: 8px;
   font-family: inherit;
@@ -527,7 +528,7 @@ input[type="email"] {
 }
 
 .breadcrumbs_item {
-padding-bottom: 40px;
+  padding-bottom: 40px;
 }
 
 /*Ссылка домика в хлебных крошках*/
@@ -563,6 +564,7 @@ padding-bottom: 40px;
 
 /*кнопки*/
 .button_blue {
+  display: block;
   font-family: inherit;
   font-style: normal;
   font-size: 16px;
@@ -593,6 +595,10 @@ padding-bottom: 40px;
   border: none;
 }
 
+.hotel_card_img{
+  object-fit: contain;
+}
+
 /*заголовки отелей*/
 .hotel_card_title {
   min-width: 100%;
@@ -605,7 +611,6 @@ padding-bottom: 40px;
   font-size: 24px;
   line-height: 28px;
   color: inherit;
-
 }
 
 /*стоимость отелей*/
@@ -685,6 +690,7 @@ padding-bottom: 40px;
 
 /*рейтинг*/
 .hotel_card_rating {
+  margin-top: 16px;
   margin-bottom: 16px;
   font-family: inherit;
   font-style: normal;
@@ -798,12 +804,42 @@ padding-bottom: 40px;
   min-width: 160px;
 }
 
+/*фильтр каталога*/
 .catalog_hotel {
   margin-bottom: 62px;
   padding-left: 70px;
   padding-bottom: 70px;
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.catalog_filter_group {
+  padding-left: 0;
+  margin-right: 70px;
+  border-style: none;
+}
+
+.catalog_filter_group_two {
+  padding-left: 0;
+  margin-right: 450px;
+  border-style: none;
+}
+
+.catalog_filter_title {
+  padding-bottom: 30px;
+}
+
+.catalog_filter_item:not(:last-child) {
+  padding-bottom: 15px;
+}
+
+.conteiner_button {
+  flex-direction: column;
+  margin: 0;
+  padding-right: 70px;
+  padding-left: 70px;
+  align-self: flex-end;
 }
 
 .select_sorting_title {
@@ -829,6 +865,7 @@ padding-bottom: 40px;
   margin: 0 73px 0 71px;
 }
 
+/*карточки товаров*/
 .hotel_list {
   display: grid;
   grid-template-columns: 340px 340px 340px;
@@ -843,24 +880,8 @@ padding-bottom: 40px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-
 }
 
 .select_conteiner {
   display: flex;
-}
-
-.button:not(:last-child) {
-  padding-right: 8px;
-}
-
-.button {
-  min-width: 48px;
-  min-height: 48px;
-}
-
-.hotel_card_button,
-.button_favourites,
-.button_favourites_green {
-  margin-bottom: 16px;
 }
