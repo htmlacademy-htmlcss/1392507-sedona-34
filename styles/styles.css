@@ -46,7 +46,7 @@ body {
   background-color: #FFFFFF;
 }
 
-.conteiner {
+.container {
   width: 1200px;
   margin: 0 auto;
   display: flex;
@@ -106,7 +106,7 @@ body {
 }
 
 /* кнопка шапки*/
-.navigation_conteiner_link {
+.navigation_container_link {
   min-width: 160px;
   min-height: 37px;
   padding-left: 20px;
@@ -319,7 +319,7 @@ body {
   color: #333333;
 }
 
-.conteiner_link {
+.container_link {
   min-width: 574px;
   margin-right: 313px;
   margin-left: 313px;
@@ -595,7 +595,7 @@ input[type="email"] {
   border: none;
 }
 
-.hotel_card_img{
+.hotel_card_img {
   object-fit: contain;
 }
 
@@ -834,7 +834,7 @@ input[type="email"] {
   padding-bottom: 15px;
 }
 
-.conteiner_button {
+.container_button {
   flex-direction: column;
   margin: 0;
   padding-right: 70px;
@@ -882,6 +882,6 @@ input[type="email"] {
   justify-content: space-between;
 }
 
-.select_conteiner {
+.select_container {
   display: flex;
 }
