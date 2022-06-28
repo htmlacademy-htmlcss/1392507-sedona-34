@@ -114,6 +114,7 @@ body {
   padding-top: 4px;
   padding-bottom: 4px;
   margin-top: 14px;
+  margin-bottom: 14px;
   text-decoration: none;
   align-items: center;
   text-align: center;
@@ -201,7 +202,7 @@ body {
   width: 1200px;
 }
 
-.flex_advantages {
+.flex_advantages:not(.icons) {
   padding-top: 92px;
   padding-bottom: 92px;
 }
@@ -885,4 +886,43 @@ input[type="email"] {
 
 .select_container {
   display: flex;
+}
+
+
+.navigation_user .navigation_item:nth-child(1) .navigation_item_link {
+  background-image: url("../images/search.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 24px 12px;
+}
+
+.navigation_user .navigation_item:nth-child(2) .navigation_item_link {
+  background-image: url("../images/favorite.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 24px 12px;
+}
+
+.icons_home {
+  background-image: url("../images/home_icons.svg");
+  background-repeat: no-repeat;
+  background-position: center 80px;
+}
+
+.icons_home,
+.icons_meal,
+.icons_present{
+  padding-top: ;
+}
+
+.icons_meal{
+  background-image: url("../images/meal_icons.svg");
+  background-repeat: no-repeat;
+  background-position: center 80px;
+}
+
+.icons_present{
+  background-image: url("../images/present_icons.svg");
+  background-repeat: no-repeat;
+  background-position: center 80px;
 }
