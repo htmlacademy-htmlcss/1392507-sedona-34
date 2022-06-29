@@ -89,7 +89,6 @@ body {
   justify-content: right;
   min-width: 490px;
   margin: 0;
-  padding-left: 0;
 }
 
 /* навигация шапки*/
@@ -113,17 +112,38 @@ body {
   min-height: 37px;
   padding-left: 20px;
   padding-right: 70px;
-  padding-top: 4px;
-  margin-top: 14px;
+  padding-top: 14px;
+  padding-bottom: 14px;
   text-decoration: none;
-  align-items: center;
-  text-align: center;
   text-transform: uppercase;
 }
 
+.navigation_item_link_user {
+  min-width: 42px;
+  min-height: 66px;
+  padding-right: 70px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.navigation_user .navigation_item:nth-child(1) .navigation_item_link_user {
+  background-image: url("../images/search.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+background-size: 18px 18px;
+}
+
+.navigation_user .navigation_item:nth-child(2) .navigation_item_link_user {
+  background-image: url("../images/favorite.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 18px 18px;
+}
+
 .header_button {
-  display: block;
-  padding-top: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-family: inherit;
   font-style: normal;
   font-size: 16px;
@@ -559,12 +579,6 @@ input[type="email"] {
   width: 150px;
 }
 
-.breadcrumbs_item_link {
-  margin-right: 26px;
-}
-
-
-
 /*Ссылка домика в хлебных крошках*/
 .breadcrumbs_item a {
   color: #FFFFFF;
@@ -662,6 +676,8 @@ input[type="email"] {
 
 /*кнопка подробнее*/
 .hotel_card_button {
+  display: flex;
+  justify-content: center;
   font-family: inherit;
   font-style: normal;
   font-size: 16px;
@@ -724,6 +740,9 @@ input[type="email"] {
 
 /*рейтинг*/
 .hotel_card_rating {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 margin-right: 10px;
   margin-top: 16px;
   margin-bottom: 16px;
@@ -923,21 +942,6 @@ margin-right: 10px;
   display: flex;
 }
 
-
-.navigation_user .navigation_item:nth-child(1) .navigation_item_link {
-  background-image: url("../images/search.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  margin: 24px 12px;
-}
-
-.navigation_user .navigation_item:nth-child(2) .navigation_item_link {
-  background-image: url("../images/favorite.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  margin: 24px 12px;
-}
-
 .icons_home {
   background-image: url("../images/home_icons.svg");
   background-repeat: no-repeat;
@@ -999,4 +1003,8 @@ margin-right: 70px;
 
 .star_svg:not(:last-child) {
   padding-right: 6px;
+}
+
+.breadcrumbs_item_link_home {
+padding-right: 10px;
 }
