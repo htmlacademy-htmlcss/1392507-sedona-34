@@ -18,7 +18,7 @@
           </a>
           <ul class="navigation_list">
             <li class="navigation_item">
-              <a class="navigation_item_link" href="index.html">
+              <a class="navigation_item_link navigation_link_active" href="index.html">
                 Главная
               </a>
             </li>
@@ -28,7 +28,7 @@
               </a>
             </li>
             <li class="navigation_item">
-              <a class="navigation_item_link navigation_link_active" href="catalog.html">
+              <a class="navigation_item_link" href="catalog.html">
                 Гостиницы
               </a>
             </li>
@@ -49,6 +49,7 @@
                 </span>
               </a>
             </li>
+
             <!--кнопка-->
             <li class="navigation_item">
               <div class="navigation_container_link">
@@ -176,26 +177,36 @@
               </option>
             </select>
 
+            <div class="container_filter_button">
+              <a class="filter_button button_tile button_tile_active" href="#">
+                <svg width="16" height="14" viewBox="0 0 16 14" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M4 0H0v6h4V0ZM16 0h-4v6h4V0ZM10 0H6v6h4V0ZM4 8H0v6h4V8ZM16 8h-4v6h4V8ZM10 8H6v6h4V8Z" />
+                </svg>
+                <span class="visually_hidden">
+                  Плитка
+                </span>
+              </a>
 
-            <a class="button button_tile_active" href="#">
-              <span class="visually_hidden">
-                Плитка
-              </span>
-            </a>
+              <a class="filter_button button_slides" href="#">
+                <svg width="16" height="14" viewBox="0 0 16 14" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M16 12H0v2h16v-2ZM14 2v6H2V2h12Zm2-2H0v10h16V0Z" />
+                </svg>
+                <span class="visually_hidden">
+                  Слайд-шоу
+                </span>
+              </a>
 
-            <a class="button" href="#">
-              <span class="visually_hidden">
-                Слайд-шоу
-              </span>
-            </a>
-
-            <a class="button" href="#">
-              <span class="visually_hidden">
-                Список
-              </span>
-            </a>
+              <a class="filter_button button_list" href="#">
+                <svg width="16" height="14" viewBox="0 0 16 14" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M2 0H0v2h2V0ZM16 0H4v2h12V0ZM2 4H0v2h2V4ZM16 4H4v2h12V4ZM2 8H0v2h2V8ZM16 8H4v2h12V8ZM2 12H0v2h2v-2ZM16 12H4v2h12v-2Z" />
+                </svg>
+                <span class="visually_hidden">
+                  Список
+                </span>
+              </a>
+            </div>
           </div>
-
 
           <ul class="hotel_list">
             <!--1 отель-->
@@ -384,7 +395,7 @@
             </h2>
             <ul class="footer_social_list">
               <li class="footer_social_item">
-                <a class="button vk" href="https://vk.com/htmlacademy">
+                <a class="footer-social-link button_vk" href="https://vk.com/htmlacademy">
                   <span class="visually_hidden">
                     ВКонтакте
                   </span>
@@ -392,7 +403,7 @@
               </li>
 
               <li class="footer_social_item">
-                <a class="button tg" href="https://t.me/htmlacademy">
+                <a class="footer-social-link button_tg" href="https://t.me/htmlacademy">
                   <span class="visually_hidden">
                     Телеграм
                   </span>
@@ -400,7 +411,7 @@
               </li>
 
               <li class="footer_social_item">
-                <a class="button youtube" href="https://www.youtube.com/user/htmlacademyru">
+                <a class="footer-social-link button_youtube" href="https://www.youtube.com/user/htmlacademyru">
                   <span class="visually_hidden">
                     Ютуб
                   </span>

@@ -87,7 +87,9 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: right;
-  min-width: 371px;
+  min-width: 490px;
+  margin: 0;
+  padding-left: 0;
 }
 
 /* навигация шапки*/
@@ -112,9 +114,7 @@ body {
   padding-left: 20px;
   padding-right: 70px;
   padding-top: 4px;
-  padding-bottom: 4px;
   margin-top: 14px;
-  margin-bottom: 14px;
   text-decoration: none;
   align-items: center;
   text-align: center;
@@ -136,6 +136,7 @@ body {
   color: #FFFFFF;
   border: none;
   text-decoration: none;
+  text-align: center;
 }
 
 /* текст на фоновом изображении*/
@@ -202,9 +203,16 @@ body {
   width: 1200px;
 }
 
-.flex_advantages:not(.icons) {
+.flex_advantages:not(.icons_home):not(.icons_meal):not(.icons_present) {
   padding-top: 92px;
   padding-bottom: 92px;
+}
+
+.icons_home,
+.icons_meal,
+.icons_present {
+  padding-top: 182px;
+  padding-bottom: 81px;
 }
 
 .advantages_list {
@@ -449,42 +457,68 @@ input[type="email"] {
   color: #000000;
 }
 
+.footer_contact {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+
 /*размеры для футера (флекс)*/
 .flex_footer {
   display: flex;
   width: 1200px;
   margin: 0 auto;
-  padding-top: 40px;
+  padding-top: 56px;
   padding-bottom: 30px;
   justify-content: space-between;
 }
 
 .footer_social {
-  width: 180px;
+  width: 240px;
   padding-left: 70px;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 .footer_social_list {
   display: flex;
   flex-wrap: wrap;
-  width: 180px;
+  width: 240px;
+
 }
 
-.footer_social_item {
-  min-width: 48px;
-  min-height: 40px;
-  padding-left: 12px;
+.footer-social-link {
+  display: block;
+  width: 48px;
+  height: 40px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 22px 17px;
+  padding-left: 14px;
+  padding-right: 14px;
 }
+
+.button_vk {
+  background-image: url("../images/icons_vk.svg");
+}
+
+.button_tg {
+  background-image: url("../images/icons_tg.svg");
+}
+
+.button_youtube {
+  background-image: url("../images/icons_youtube.svg");
+}
+
 
 .footer_logo_link {
   padding-left: 42px;
   padding-right: 70px;
-  padding-top: 49px;
-  padding-bottom: 39px;
 }
 
-.footer_contact_address {
-  padding: 5px 194px;
+.footer_logo{
+  padding-top: 8px;
+  padding-bottom: 8px;
 }
 
 /*фон каталога*/
@@ -529,9 +563,7 @@ input[type="email"] {
   margin-right: 26px;
 }
 
-.breadcrumbs_item {
-  padding-bottom: 40px;
-}
+
 
 /*Ссылка домика в хлебных крошках*/
 .breadcrumbs_item a {
@@ -808,6 +840,7 @@ input[type="email"] {
 
 /*фильтр каталога*/
 .catalog_hotel {
+  margin-top: 40px;
   margin-bottom: 62px;
   padding-left: 70px;
   padding-bottom: 70px;
@@ -859,6 +892,7 @@ input[type="email"] {
 
 .select_sorting {
   margin-right: 78px;
+  width: 160px;
 }
 
 .flex_filter {
@@ -925,4 +959,36 @@ input[type="email"] {
   background-image: url("../images/present_icons.svg");
   background-repeat: no-repeat;
   background-position: center 80px;
+}
+
+.filter_button {
+  width: 48px;
+  height: 48px;
+  padding: 16px;
+  box-sizing: border-box;
+}
+
+.button_tile_active{
+  border: 2px solid #000000;
+  border-radius: 4px;
+}
+
+.button_slides,
+.button_list {
+  border: 2px solid #E5E5E5;
+  border-radius: 4px;
+}
+
+.filter_button:not(:last-child){
+  margin-right: 8px;
+}
+
+.search_hotel{
+margin-right: 70px;
+}
+
+.container_filter_button{
+  margin-top:20px;
+  width: 300px;
+  justify-content: right;
 }
