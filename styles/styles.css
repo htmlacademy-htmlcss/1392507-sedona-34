@@ -64,13 +64,13 @@ body {
 /* задаём размеры навигации*/
 .navigation {
   display: flex;
+  justify-content: space-between;
   width: 1200px;
 }
 
-.navigation_logo {
+.navigation_page_logo{
+  position: absolute;
   padding-left: 70px;
-  padding-right: 30px;
-  margin: 0;
 }
 
 /* задаём размеры первому списку*/
@@ -80,6 +80,7 @@ body {
   width: 490px;
   margin: 0;
   padding: 0;
+  justify-content: right;
 }
 
 /* задаём размеры второму списку*/
@@ -163,7 +164,7 @@ background-size: 18px 18px;
 .main_image_welcome {
   display: block;
   margin: 0 auto;
-  padding-top: 47px;
+  padding-top: 51px;
   padding-bottom: 26px;
   color: #FFFFFF;
 }
@@ -349,24 +350,10 @@ background-size: 18px 18px;
   color: #333333;
 }
 
-.container_link {
-  min-width: 574px;
-  margin-right: 313px;
-  margin-left: 313px;
-  padding-left: 9px;
-  padding-top: 6px;
-  padding-right: 9px;
-  padding-bottom: 6px;
-  background: #756157;
-  border-radius: 4px;
-  align-items: center;
-  text-align: center;
-}
-
 /*кнопка поиска*/
 .search_link {
   display: block;
-  padding: 6px;
+  padding: 12px;
   font-family: inherit;
   font-style: normal;
   font-size: 20px;
@@ -375,8 +362,14 @@ background-size: 18px 18px;
   text-decoration: none;
   text-transform: uppercase;
   color: #FFFFFF;
+  background: #756157;
+  min-width: 574px;
+  margin-right: 313px;
+  margin-left: 313px;
+  border-radius: 4px;
+  align-items: center;
+  text-align: center;
 }
-
 
 /*фон формы*/
 .subscribe {
@@ -513,23 +506,16 @@ input[type="email"] {
   height: 40px;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 22px 17px;
-  padding-left: 14px;
-  padding-right: 14px;
 }
 
-.button_vk {
-  background-image: url("../images/icons_vk.svg");
-}
-
-.button_tg {
-  background-image: url("../images/icons_tg.svg");
-}
-
+.button_vk,
+.button_tg,
 .button_youtube {
-  background-image: url("../images/icons_youtube.svg");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  fill: #83B3D3;
 }
-
 
 .footer_logo_link {
   padding-left: 42px;
@@ -780,6 +766,13 @@ margin-right: 10px;
   border-radius: 4px;
   color: #ffffff;
   border: 1px solid #82B3D3;
+  text-decoration: none;
+}
+
+.pagination_current{
+  background: #F2F2F2;
+  color: #000000;
+  border: 1px solid #F2F2F2;
 }
 
 .number_page,
@@ -842,10 +835,6 @@ margin-right: 10px;
 }
 
 /*заголовки отелей*/
-.pagination_item a {
-  color: #FFFFFF;
-  text-decoration: none;
-}
 
 .number_page {
   display: block;
@@ -1007,4 +996,89 @@ margin-right: 70px;
 
 .breadcrumbs_item_link_home {
 padding-right: 10px;
+}
+
+.divider_svg {
+  fill: #fff;
+}
+
+
+/*состояния*/
+/*коричневые кнопки*/
+
+.button_states_brown:hover {
+  background-color: #615048;
+}
+
+.button_states_brown:focus {
+  background-color: #615048;
+}
+
+.button_states_brown:active {
+  background-color: #756157;
+  color: #FFFFFF4D;
+}
+
+.button_states_brown:disabled {
+  color: #FFFFFF;
+  background-color: #E5E5E5;
+}
+
+/*голубые кнопки*/
+
+.button_states_blue:hover {
+  background-color: #68A2CA;
+  cursor: pointer;
+}
+
+.button_states_blue:focus {
+  background-color: #68A2CA;
+}
+
+.button_states_blue:active {
+  color: #FFFFFF4D;
+}
+
+.button_states_blue:disabled {
+  color: #FFFFFF;
+  background-color: #E5E5E5;
+}
+
+/*зеленые кнопки*/
+
+.button_states_green:hover {
+  background-color: #6C9E42;
+  cursor: pointer;
+}
+
+.button_states_green:focus {
+  background-color: #6C9E42;
+}
+
+.button_states_green:active {
+  color: #FFFFFF4D;
+}
+
+.button_states_green:disabled {
+  color: #FFFFFF;
+  background-color: #E5E5E5;
+}
+
+/*голубые кнопки пагинации*/
+
+.pagination_states_blue:hover {
+  background-color: #68A2CA;
+}
+
+.pagination_states_blue:focus {
+  background-color: #68A2CA;
+}
+
+.pagination_states_blue:active {
+  color: #FFFFFF4D;
+}
+
+.pagination_states_blue:disabled {
+  color: #FFFFFF;
+  background-color: #E5E5E5;
 }
