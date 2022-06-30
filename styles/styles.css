@@ -120,9 +120,11 @@ body {
 }
 
 .navigation_item_link_user {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   min-width: 42px;
   min-height: 66px;
-  padding-right: 70px;
   text-decoration: none;
   text-transform: uppercase;
 }
@@ -131,7 +133,6 @@ body {
   background-image: url("../images/search.svg");
   background-repeat: no-repeat;
   background-position: center;
-background-size: 18px 18px;
 }
 
 .navigation_user .navigation_item:nth-child(2) .navigation_item_link_user {
@@ -1024,6 +1025,7 @@ padding-right: 10px;
   background-color: #E5E5E5;
 }
 
+/*состояния*/
 /*голубые кнопки*/
 
 .button_states_blue:hover {
@@ -1044,6 +1046,7 @@ padding-right: 10px;
   background-color: #E5E5E5;
 }
 
+/*состояния*/
 /*зеленые кнопки*/
 
 .button_states_green:hover {
@@ -1064,6 +1067,7 @@ padding-right: 10px;
   background-color: #E5E5E5;
 }
 
+/*состояния*/
 /*голубые кнопки пагинации*/
 
 .pagination_states_blue:hover {
@@ -1081,4 +1085,70 @@ padding-right: 10px;
 .pagination_states_blue:disabled {
   color: #FFFFFF;
   background-color: #E5E5E5;
+}
+
+/*состояния*/
+/*голубые кнопки пагинации*/
+
+.pagination_states_blue:hover {
+  background-color: #68A2CA;
+}
+
+.pagination_states_blue:focus {
+  background-color: #68A2CA;
+}
+
+.pagination_states_blue:active {
+  color: #FFFFFF4D;
+}
+
+/*состояния иконок футера*/
+.footer_states_icons:hover {
+  fill: #68A2CA;
+}
+
+.footer_states_icons:focus {
+  fill: #68A2CA;
+}
+
+.footer_states_icons:active {
+  opacity: 30%;
+}
+
+/*состояния номера*/
+.footer_states_phone:hover {
+  color: #756157;
+}
+
+.footer_states_phone:focus {
+  color: #756157;
+}
+
+.footer_states_phone:active {
+  color: #756157;
+  opacity: 30%;
+}
+
+/*состояния логотипа футера*/
+.footer_states_logo:hover {
+  fill:  #756157;
+}
+
+.footer_states_logo:focus {
+  fill:  #756157;
+}
+
+.footer_states_logo:active {
+  fill:  #756157;
+  opacity: 30%;
+}
+
+.navigation_link_active::before {
+  position: absolute;
+width: 68px;
+height: 2px;
+left: 328px;
+top: 65px;
+content: "";
+background-color: #756257;
 }
