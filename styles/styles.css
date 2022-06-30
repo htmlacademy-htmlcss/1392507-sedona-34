@@ -444,6 +444,7 @@ input[type="email"] {
   border-radius: 0px 10px 10px 0px;
   color: #FFFFFF;
   border: none;
+  padding: 0;
 }
 
 /*цвета футера*/
@@ -1164,18 +1165,18 @@ input[type="email"] {
   position: absolute;
   width: 68px;
   height: 2px;
-  left: 328px;
-  top: 65px;
+margin-left: 16px;
+margin-top: 66px;
   content: "";
   background-color: #756257;
 }
 
 .navigation_link_active_catalog::before {
   position: absolute;
+  display: block;
   width: 93px;
   height: 2px;
-  left: 546px;
-  top: 65px;
+  margin-top: 46px;
   content: "";
   background-color: #756257;
 }
@@ -1186,8 +1187,8 @@ input[type="email"] {
   position: absolute;
   width: 20px;
   height: 20px;
-  top: 15px;
-  left: 1007px;
+  margin-left: 26px;
+  margin-bottom: 16px;
   border-radius: 10px;
   background-color: #7DB54F;
   content: "12";
