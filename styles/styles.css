@@ -657,14 +657,19 @@ input[type="email"] {
   cursor: pointer;
 }
 
-.button_remove:hover,
-.button_remove:focus {
-  background-color: #e2eefa;
-  border-radius: 4px;
-  opacity: 50%;
-  color: #000000;
-  font-weight: 700;
+.button_remove:hover{
+  opacity: 0.6;
 }
+
+.button_remove:focus{
+border: 3px solid #83B3D3;
+border-radius: 4px;
+outline: none;
+}
+
+.button_remove:active{
+  opacity: 0.3;
+  }
 
 /*карточки отелей*/
 .hotel_list {
@@ -1007,6 +1012,7 @@ input[type="email"] {
 .button_states_brown:hover,
 .button_states_brown:focus {
   background-color: #615048;
+  outline: none;
 }
 
 .button_states_brown:active {
@@ -1024,6 +1030,7 @@ input[type="email"] {
 .button_states_blue:focus {
   background-color: #68A2CA;
   cursor: pointer;
+  outline: none;
 }
 
 .button_states_blue:active {
@@ -1040,6 +1047,7 @@ input[type="email"] {
 .button_states_green:focus {
   background-color: #6C9E42;
   cursor: pointer;
+  outline: none;
 }
 
 .button_states_green:active {
@@ -1055,6 +1063,7 @@ input[type="email"] {
 .pagination_states_blue:hover,
 .pagination_states_blue:focus {
   background-color: #68A2CA;
+  outline: none;
 }
 
 .pagination_states_blue:active {
@@ -1070,6 +1079,7 @@ input[type="email"] {
 .pagination_states_blue:hover,
 .pagination_states_blue:focus {
   background-color: #68A2CA;
+  outline: none;
 }
 
 .pagination_states_blue:active {
@@ -1080,12 +1090,14 @@ input[type="email"] {
 .footer_states_icons:hover,
 .footer_states_icons:focus {
   fill: #68A2CA;
+  outline: none;
 }
 
 /*состояния номера*/
 .footer_states_phone:hover,
 .footer_states_phone:focus {
   color: #756157;
+  outline: none;
 }
 
 .footer_states_phone:active {
@@ -1097,6 +1109,7 @@ input[type="email"] {
 .footer_states_logo:hover,
 .footer_states_logo:focus {
   fill: #756157;
+  outline: none;
 }
 
 .footer_states_logo:active {
@@ -1125,6 +1138,7 @@ input[type="email"] {
 .form_states:focus {
   background-color: #E6E6E6;
   cursor: pointer;
+  outline: none;
 }
 
 .form_states:disabled,
@@ -1256,23 +1270,106 @@ position: relative;
 
 .range_scale {
   position: relative;
-  height: 4px;
-  background-color: #FFFFFF;
-  opacity: 0.3;
   width: 286px;
-}
-
-.range_bar {
-  position: absolute;
   height: 4px;
-  color: #FFFFFF;
+  background-color: #696e71;
+  }
+
+  .range_bar {
+    position: absolute;
+    height: 4px;
+    background-color: #ffffff;
+  }
+
+  .range_toggle {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: #ffffff;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+  }
+
+  .range_toggle:hover,
+  .range_toggle:focus{
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+    border: 3px solid #83B3D3;
+    outline: none;
+  }
+
+  .range_toggle:active{
+    border: 2px solid #83B3D3;
+box-shadow: 0 7px 15px rgba(0, 0, 0, 0.4);
+  }
+
+  .toggle_min {
+    top: -8px;
+
+  }
+
+  .toggle_max {
+    top: -8px;
+    right: -10px;
+  }
+
+  .range_wrapper_inputs{
+    display: flex;
+  }
+  .range_input_min{
+    border: 2px solid #FFFFFF;
+    border-radius: 4px 0 0 4px ;
+    background-color: transparent;
+    color: #FFFFFF;
+    padding: 14px 18px;
+  }
+
+  .range_input_max{
+    border: 2px solid #FFFFFF;
+    border-radius: 0 4px 4px 0 ;
+    background-color: transparent;
+    color: #FFFFFF;
+    padding: 14px 18px;
+  }
+
+  .range_input::-webkit-outer-spin-button,
+.range_input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
 }
 
-.range_toggle {
+.range_input{
+  font-family: inherit;
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 21px;
+}
+
+.range_input:hover{
+border-color: #B4B9BC;
+cursor: pointer;
+}
+
+.range_input:focus,
+.range_input:active{
+  box-shadow: 0p 0 0 3px #81B3D2;
+  background: #756257;
+  outline: none;
+}
+
+.control{
+  position: relative;
+display: block;
+padding-left: 36px;
+cursor: pointer;
+}
+
+.control_mark{
   position: absolute;
+  left: 0;
   width: 20px;
   height: 20px;
-  background-color: #FFFFFF;
-  border-radius: 5px;
-  border: none;
+  background: #FFFFFF;
+border-radius: 4px;
 }
