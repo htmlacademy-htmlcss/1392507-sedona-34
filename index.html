@@ -322,6 +322,72 @@
         </div>
       </footer>
     </div>
+
+    <div class="modal_container">
+      <div class="modal">
+        <button class="modal_close_button">
+          <span class="visually_hidden">Закрыть</span>
+        </button>
+        <section class="modal_content">
+          <h2 class="modal_title">Поиск гостиницы в Седоне</h2>
+          <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
+            <div class="flex_form">
+            <label class="arrival_date" for="arrival">Дата Заезда:</label>
+          <input class="text_input" type="text" id="arrival" value="27 апреля 2020">
+          <button class="button_arrival" type="button">
+          </button>
+            <span class="visually_hidden">Календарь
+            </span>
+            <p class="data_text_red">Мы не можем отправить вас в прошлое.
+            </p>
+          </div>
+
+          <div class="flex_form">
+            <label class="departure_date" for="departure">Дата Выезда:</label>
+          <input class="text_input" type="text" id="departure" value="1 сентября 2021">
+          <button class="button_departure" type="button">
+          </button>
+            <span class="visually_hidden">Календарь
+            </span>
+            <p class="data_text">На эти даты есть свободные номера. Пока есть.
+            </p>
+          </div>
+
+            <div class="flex_form margin_bottom">
+            <label class="number_adults_label" for="adult">Взрослые:</label>
+          <button class="button_minus" type="button">
+            <span class="visually_hidden">Минус
+            </span>
+          </button>
+
+          <input class="number_people number_adults" type="number" id="adult" name="adult" value="2">
+          <button class="button_plus" type="button">
+            <span class="visually_hidden">Плюс
+            </span>
+          </button>
+
+
+
+          <label class="number_children_label" for="children">Дети:</label>
+          <button class="button_minus_children" type="button">
+            <span class="visually_hidden">Минус
+            </span>
+          </button>
+
+          <input class="number_people number_children" type="number" id="children" name="children" value="1">
+          <button class="button_plus_children" type="button">
+            <span class="visually_hidden">Плюс
+            </span>
+          </button>
+        </div>
+
+<button class="discover_bottom" type="submit">Найти</button>
+
+        </form>
+        </section>
+      </div>
+    </div>
+
   </body>
 
 </html>
