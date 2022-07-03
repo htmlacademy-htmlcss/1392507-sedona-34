@@ -331,7 +331,8 @@
         <section class="modal_content">
           <h2 class="modal_title">Поиск гостиницы в Седоне</h2>
           <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
-            <div class="flex_form">
+
+            <div class="flex_form_arrival">
             <label class="arrival_date" for="arrival">Дата Заезда:</label>
           <input class="text_input" type="text" id="arrival" value="27 апреля 2020">
           <button class="button_arrival" type="button">
@@ -342,7 +343,7 @@
             </p>
           </div>
 
-          <div class="flex_form">
+          <div class="flex_form_departure">
             <label class="departure_date" for="departure">Дата Выезда:</label>
           <input class="text_input" type="text" id="departure" value="1 сентября 2021">
           <button class="button_departure" type="button">
@@ -353,7 +354,8 @@
             </p>
           </div>
 
-            <div class="flex_form margin_bottom">
+            <div class="flex_form_number margin_bottom">
+              <div class="container_button_adults">
             <label class="number_adults_label" for="adult">Взрослые:</label>
           <button class="button_minus" type="button">
             <span class="visually_hidden">Минус
@@ -365,9 +367,9 @@
             <span class="visually_hidden">Плюс
             </span>
           </button>
+        </div>
 
-
-
+            <div class="container_button_children">
           <label class="number_children_label" for="children">Дети:</label>
           <button class="button_minus_children" type="button">
             <span class="visually_hidden">Минус
@@ -379,6 +381,7 @@
             <span class="visually_hidden">Плюс
             </span>
           </button>
+            </div>
         </div>
 
 <button class="discover_bottom" type="submit">Найти</button>

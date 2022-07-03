@@ -1411,9 +1411,9 @@ input[type="email"] {
   padding: 70px;
   padding-top: 62px;
   background: #FFFFFF;
-  box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
   border-radius: 30px;
-  width: 600px;
+  width: 580px;
 }
 
 .modal_close_button {
@@ -1444,9 +1444,12 @@ input[type="email"] {
   margin-bottom: 62px;
 }
 
-.flex_form {
+.flex_form_arrival,
+.flex_form_departure,
+.flex_form_number {
   display: flex;
   flex-wrap: wrap;
+  position: relative;
 }
 
 /*лейблы*/
@@ -1494,6 +1497,8 @@ input[type="email"] {
   align-items: flex-end;
   color: #FF5757;
   margin-left: 155px;
+  margin-top: 0;
+  padding: 0;
 }
 
 .data_text {
@@ -1506,6 +1511,8 @@ input[type="email"] {
   align-items: flex-end;
   color: #333333;
   margin-left: 155px;
+  margin-top: 0;
+  padding: 0;
 }
 
 .text_input {
@@ -1516,7 +1523,7 @@ input[type="email"] {
   line-height: 21px;
   align-items: center;
   color: #000000;
-  width: 420px;
+  width: 402px;
   height: 50px;
   background: #F2F2F2;
   border-radius: 4px;
@@ -1525,20 +1532,22 @@ input[type="email"] {
   position: relative;
 }
 
-.number_people{
+
+
+.number_people {
   font-family: inherit;
-font-style: normal;
-font-weight: 400;
-font-size: 18px;
-line-height: 21px;
-align-items: center;
-text-align: center;
-color: #000000;
-width: 132px;
-height: 50px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  align-items: center;
+  text-align: center;
+  color: #000000;
+  width: 132px;
+  height: 50px;
   background: #F2F2F2;
-border-radius: 4px;
-border: none;
+  border-radius: 4px;
+  border: none;
 }
 
 
@@ -1548,7 +1557,8 @@ border: none;
   margin: 0;
 }
 
-.button_arrival{
+
+.button_arrival {
   background-image: url("../images/calendar.svg");
   background-repeat: no-repeat;
   background-position: center;
@@ -1557,11 +1567,12 @@ border: none;
   height: 15px;
   border: none;
   position: absolute;
-  right: 94px;
-  top: 178px;
+  left: 542px;
+  top: 16px;
+
 }
 
-.button_departure{
+.button_departure {
   background-image: url("../images/calendar.svg");
   background-repeat: no-repeat;
   background-position: center;
@@ -1570,17 +1581,21 @@ border: none;
   height: 15px;
   border: none;
   position: absolute;
-  right: 94px;
-  top: 284px;
+  left: 542px;
+  top: 16px;
 }
 
 /*плюсы и минусы "взрослые"*/
-.button_minus_form{
+.container_button_adults,
+.container_button_children {
+  display: flex;
+  flex-wrap: wrap;
   position: relative;
 }
 
-.button_minus[type="button"]::before{
- position: absolute;
+
+.button_minus[type="button"]::before {
+  position: absolute;
   width: 1px;
   height: 13px;
   background: #000000;
@@ -1590,110 +1605,123 @@ border: none;
   bottom: 4px;
 }
 
-.button_minus{
+.button_minus {
   width: 25px;
   height: 25px;
   position: absolute;
-
+  left: 172px;
+  top: 12px;
   z-index: 1;
+  border: none;
+  cursor: pointer;
 }
 
 
 /*взрослые*/
-.button_plus{
-    width: 25px;
-    height: 25px;
-    position: absolute;
+.button_plus {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  left: 250px;
+  top: 12px;
+  z-index: 1;
+  border: none;
+  cursor: pointer;
+}
 
-    z-index: 1;
-  }
-
-  .button_plus[type="button"]::before,
-  .button_plus[type="button"]::after{
-    position: absolute;
+.button_plus[type="button"]::before,
+.button_plus[type="button"]::after {
+  position: absolute;
   width: 1px;
   height: 13px;
   background: #000000;
   opacity: 0.3;
   content: "";
-  }
+}
 
-  .button_plus[type="button"]::before{
-    transform: rotate(-90deg);
-    bottom: 4px;
-  }
+.button_plus[type="button"]::before {
+  transform: rotate(-90deg);
+  bottom: 4px;
+}
 
-  .button_plus[type="button"]::after{
-    bottom: 4px;
-  }
-
-
-  /*дети*/
-  .button_minus_children[type="button"]::before{
-    position: absolute;
-     width: 1px;
-     height: 13px;
-     background: #000000;
-     opacity: 0.3;
-     content: "";
-     transform: rotate(-90deg);
-     bottom: 4px;
-   }
-
-   .button_minus_children{
-     width: 25px;
-     height: 25px;
-     position: absolute;
-
-     bottom: px;
-     z-index: 1;
-   }
+.button_plus[type="button"]::after {
+  bottom: 4px;
+}
 
 
-   .button_plus_children{
-       width: 25px;
-       height: 25px;
-       position: absolute;
+/*дети*/
+.button_minus_children[type="button"]::before {
+  position: absolute;
+  width: 1px;
+  height: 13px;
+  background: #000000;
+  opacity: 0.3;
+  content: "";
+  transform: rotate(-90deg);
+  bottom: 4px;
+}
 
-       z-index: 1;
-     }
+.button_minus_children {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  left: 164px;
+  top: 12px;
+  z-index: 1;
+  border: none;
+  cursor: pointer;
+}
 
-     .button_plus_children[type="button"]::before,
-     .button_plus_children[type="button"]::after{
-       position: absolute;
-     width: 1px;
-     height: 13px;
-     background: #000000;
-     opacity: 0.3;
-     content: "";
-     }
 
-     .button_plus_children[type="button"]::before{
-       transform: rotate(-90deg);
-       bottom: 4px;
-     }
+.button_plus_children {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  left: 248px;
+  top: 12px;
+  z-index: 1;
+  border: none;
+  cursor: pointer;
+}
 
-     .button_plus_children[type="button"]::after{
-       bottom: 4px;
-     }
+.button_plus_children[type="button"]::before,
+.button_plus_children[type="button"]::after {
+  position: absolute;
+  width: 1px;
+  height: 13px;
+  background: #000000;
+  opacity: 0.3;
+  content: "";
+}
 
-     .margin_bottom{
-margin-bottom: 40px;
-     }
+.button_plus_children[type="button"]::before {
+  transform: rotate(-90deg);
+  bottom: 4px;
+}
 
-     .discover_bottom{
-      font-family: inherit;
-font-style: normal;
-font-weight: 700;
-font-size: 20px;
-line-height: 36px;
-align-items: center;
-text-align: center;
-text-transform: uppercase;
-color: #FFFFFF;
-      width: 574px;
-      height: 60px;
-      background: #83B3D3;
-border-radius: 10px;
-border: none;
-     }
+.button_plus_children[type="button"]::after {
+  bottom: 4px;
+}
+
+.margin_bottom {
+  margin-bottom: 40px;
+  margin-top: 0;
+}
+
+.discover_bottom {
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  width: 574px;
+  height: 60px;
+  background: #83B3D3;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
