@@ -497,7 +497,6 @@ input[type="email"] {
   display: flex;
   width: 1200px;
   margin: 0 auto;
-  padding-top: 56px;
   padding-bottom: 30px;
   justify-content: space-between;
 }
