@@ -833,6 +833,28 @@ input[type="email"] {
   color: #333333;
 }
 
+.select_control_number {
+  border: 2px solid #E5E5E5;
+border-radius: 4px;
+}
+
+
+.select_control_number:hover,
+.select_control_number:focus{
+  border: 2px solid #68A2CA;
+  cursor: pointer;
+  outline: none;
+}
+
+.select_control_number:active{
+  border: 2px solid #3F5E72;
+}
+
+.select_control_number:disabled{
+  border: 2px solid rgba(0, 0, 0, 0.3);
+  color: rgba(0, 0, 0, 0.3);
+}
+
 .subscribe_catalog {
   padding-top: 94px;
 }
@@ -868,8 +890,8 @@ input[type="email"] {
   display: flex;
   justify-content: space-between;
   width: 1055px;
-  min-height: 60px;
   padding-left: 73px;
+  box-sizing: border-box;
 }
 
 .pagination {
@@ -880,6 +902,7 @@ input[type="email"] {
 .pagination_item {
   display: inline;
   margin-left: 8px;
+  margin-top: 20px;
 }
 
 /*заголовки отелей*/
@@ -889,10 +912,12 @@ input[type="email"] {
   min-width: 175px;
   min-height: 22px;
   margin-right: 52px;
+  padding-top: 16px;
 }
 
 .select_control_number {
   min-width: 160px;
+  padding: 14px 20px;
 }
 
 .select_sorting_title {
@@ -912,7 +937,31 @@ input[type="email"] {
 
 .select_sorting {
   width: 290px;
-  padding: 14px 20px;
+  padding: 12px 20px;
+  border: 2px solid #E5E5E5;
+border-radius: 4px;
+font-family: inherit;
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 21px;
+color: #333333;
+}
+
+.select_sorting:hover,
+.select_sorting:focus{
+  border: 2px solid #68A2CA;
+  cursor: pointer;
+  outline: none;
+}
+
+.select_sorting:active{
+  border: 2px solid #3F5E72;
+}
+
+.select_sorting:disabled{
+  border: 2px solid rgba(0, 0, 0, 0.3);
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .flex_filter {
@@ -1347,6 +1396,10 @@ input[type="email"] {
   line-height: 21px;
 }
 
+.range_input::placeholder{
+  padding-left: 84px;
+}
+
 .range_input:hover {
   border-color: #B4B9BC;
   cursor: pointer;
@@ -1359,6 +1412,18 @@ input[type="email"] {
   outline: none;
 }
 
+.catalog_filter_label{
+  position: relative;
+}
+
+.label_text{
+  position: absolute;
+  top: 15px;
+  left: 104px;
+  color: #FFFFFF;
+opacity: 0.3;
+cursor: pointer;
+}
 .control {
   position: relative;
   display: block;
@@ -1375,6 +1440,24 @@ input[type="email"] {
   border-radius: 4px;
 }
 
+.control_input[type="checkbox"] + .control_mark:hover{
+  background: rgba(255, 255, 255, 0.6);
+}
+
+.control_input[type="checkbox"] + .control_mark:focus{
+  border: 3px solid #83B3D3;
+  background: rgba(255, 255, 255, 0.6);
+}
+
+.control_input[type="checkbox"] + .control_mark:active{
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.control_input[type="checkbox"]:checked + .control_mark{
+  background-image: url("../images/cheked.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
 
 .control_input[type="radio"] + .control_mark {
   border-radius: 50%;
