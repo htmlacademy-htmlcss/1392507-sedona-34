@@ -1420,16 +1420,37 @@ input[type="email"] {
   position: absolute;
   padding: 0;
   top: 54px;
-  right: 70px;
+  right: 72px;
   width: 52px;
   height: 52px;
   border-radius: 50%;
   border: none;
   background: #F2F2F2;
-  background-image: url("../images/close.svg");
-  background-repeat: no-repeat;
-  background-position: center;
   cursor: pointer;
+  border: 3px solid #F2F2F2;
+}
+
+.modal_close_svg{
+ fill: #000000;
+ position: absolute;
+ bottom: 16px;
+ right: 16px;
+}
+
+.modal_close_svg:active{
+  fill: #a1a1a1;
+}
+
+.modal_close_button:hover,
+.modal_close_button:active{
+  background: #E6E6E6;
+  border: 3px solid #E6E6E6;
+}
+
+.modal_close_button:focus{
+  background: #E6E6E6;
+  border: 3px solid #83B3D3;
+  outline: none;
 }
 
 .modal_title {
@@ -1558,7 +1579,7 @@ input[type="email"] {
 }
 
 
-.button_arrival {
+.calendar_arrival {
   background-image: url("../images/calendar.svg");
   background-repeat: no-repeat;
   background-position: center;
@@ -1568,11 +1589,11 @@ input[type="email"] {
   border: none;
   position: absolute;
   left: 542px;
-  top: 16px;
+  top: 18px;
 
 }
 
-.button_departure {
+.calendar_departure {
   background-image: url("../images/calendar.svg");
   background-repeat: no-repeat;
   background-position: center;
@@ -1582,7 +1603,7 @@ input[type="email"] {
   border: none;
   position: absolute;
   left: 542px;
-  top: 16px;
+  top: 18px;
 }
 
 /*плюсы и минусы "взрослые"*/
