@@ -80,6 +80,7 @@ body {
   width: 490px;
   margin: 0;
   padding: 0;
+  padding-right: 50px;
   justify-content: right;
 }
 
@@ -242,7 +243,7 @@ body {
 }
 
 .advantages_title {
-  margin-top: 0;
+  margin: 0;
   padding-left: 85px;
   padding-right: 85px;
   font-family: inherit;
@@ -255,7 +256,15 @@ body {
   color: #000000;
 }
 
+.margin{
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+
 .advantages_description {
+  margin: 0;
+  margin-top: 30px;
   padding-left: 85px;
   padding-right: 85px;
   font-family: inherit;
@@ -302,7 +311,7 @@ body {
   background: rgba(131, 179, 211, 0.2);
 }
 
-/* цвет заголовка для голубого фона*/
+/* цвет заголовка для белого фона*/
 .write {
   color: #FFFFFF;
 }
@@ -316,6 +325,8 @@ body {
   line-height: 21px;
   text-align: center;
   color: #FFFFFF;
+  margin-top: 30px;
+  margin-bottom: 0;
 }
 
 /* ненумерованный список - скрыто*/
@@ -817,19 +828,15 @@ input[type="email"] {
 }
 
 .pagination {
+  display: flex;
+  flex-wrap: wrap;
   margin-right: 210px;
-  width: 460px;
-}
-
-.pagination_item {
-  display: inline;
-  margin-left: 8px;
-  margin-top: 20px;
-  width: 60px;
-  height: 60px;
+  min-width: 460px;
 }
 
 .pagination_link {
+  display: flex;
+  flex-wrap: wrap;
   box-sizing: border-box;
   padding: 12px 18px;
   font-family: inherit;
@@ -847,6 +854,8 @@ input[type="email"] {
   color: #ffffff;
   border: 1px solid #82B3D3;
   text-decoration: none;
+  margin-left: 8px;
+  margin-top: 20px;
 }
 
 .pagination_current {
