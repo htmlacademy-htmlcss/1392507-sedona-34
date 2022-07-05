@@ -139,7 +139,7 @@ body {
   font-weight: 700;
   line-height: 20px;
   width: 160px;
-  height: 37px;
+  min-height: 37px;
   background: #756157;
   border-radius: 4px;
   color: #FFFFFF;
@@ -243,6 +243,8 @@ body {
 
 .advantages_title {
   margin-top: 0;
+  padding-left: 85px;
+  padding-right: 85px;
   font-family: inherit;
   font-style: normal;
   font-weight: 700;
@@ -254,6 +256,8 @@ body {
 }
 
 .advantages_description {
+  padding-left: 85px;
+  padding-right: 85px;
   font-family: inherit;
   font-style: normal;
   font-weight: 400;
@@ -338,6 +342,8 @@ body {
 .search_title {
   margin-top: 0;
   padding-bottom: 30px;
+  padding-left: 452px;
+  padding-right: 452px;
   font-family: inherit;
   font-style: normal;
   font-weight: 700;
@@ -404,6 +410,8 @@ body {
   margin-top: 0;
   padding-top: 94px;
   padding-bottom: 30px;
+  padding-left: 398px;
+  padding-right: 398px;
   font-family: inherit;
   font-style: normal;
   font-weight: 700;
@@ -418,6 +426,8 @@ body {
 .subscribe_description {
   margin-top: 0;
   padding-bottom: 46px;
+  padding-left: 362px;
+  padding-right: 362px;
   font-family: inherit;
   font-style: normal;
   font-weight: 400;
@@ -455,7 +465,7 @@ input[type="email"] {
   text-align: Center;
   text-transform: uppercase;
   width: 200px;
-  height: 60px;
+  min-height: 60px;
   background: #82B3D3;
   border-radius: 0 10px 10px 0;
   color: #FFFFFF;
@@ -634,7 +644,7 @@ input[type="email"] {
   align-items: center;
   text-transform: uppercase;
   width: 160px;
-  height: 48px;
+  min-height: 48px;
   background: #82B3D3;
   border-radius: 4px;
   color: #FFFFFF;
@@ -650,7 +660,7 @@ input[type="email"] {
   line-height: 20px;
   text-align: Center;
   width: 160px;
-  height: 48px;
+  min-height: 48px;
   background: none;
   color: #FFFFFF;
   border: none;
@@ -722,8 +732,8 @@ input[type="email"] {
   text-align: Center;
   align-items: center;
   text-transform: uppercase;
-  min-width: 140px;
-  height: 37px;
+  width: 140px;
+  min-height: 37px;
   background: #756157;
   border-radius: 4px;
   color: #FFFFFF;
@@ -742,7 +752,7 @@ input[type="email"] {
   align-items: center;
   text-transform: uppercase;
   width: 140px;
-  height: 37px;
+  min-height: 37px;
   background: #82B3D3;
   border-radius: 4px;
   color: #FFFFFF;
@@ -761,7 +771,7 @@ input[type="email"] {
   align-items: center;
   text-transform: uppercase;
   width: 140px;
-  height: 37px;
+  min-height: 37px;
   background: #7DB54F;
   border-radius: 4px;
   color: #FFFFFF;
@@ -790,7 +800,7 @@ input[type="email"] {
   text-align: Center;
   text-transform: uppercase;
   width: 140px;
-  height: 37px;
+  min-height: 37px;
   background: #F2F2F2;
   border-radius: 4px;
   color: #333333;
@@ -798,6 +808,27 @@ input[type="email"] {
 }
 
 /*пагинация*/
+.flex_pagination {
+  display: flex;
+  justify-content: space-between;
+  width: 1055px;
+  padding-left: 73px;
+  box-sizing: border-box;
+}
+
+.pagination {
+  margin-right: 210px;
+  width: 460px;
+}
+
+.pagination_item {
+  display: inline;
+  margin-left: 8px;
+  margin-top: 20px;
+  width: 60px;
+  height: 60px;
+}
+
 .pagination_link {
   box-sizing: border-box;
   padding: 12px 18px;
@@ -865,6 +896,8 @@ input[type="email"] {
 .subscribe_title_catalog {
   margin-top: 0;
   margin-bottom: 29px;
+  padding-left: 398px;
+  padding-right: 398px;
   font-family: inherit;
   font-style: normal;
   font-weight: 700;
@@ -879,6 +912,8 @@ input[type="email"] {
 .subscribe_description_catalog {
   margin-top: 0;
   margin-bottom: 46px;
+  padding-left: 362px;
+  padding-right: 362px;
   font-family: inherit;
   font-style: normal;
   font-weight: 400;
@@ -886,25 +921,6 @@ input[type="email"] {
   line-height: 26px;
   text-align: center;
   color: #333333;
-}
-
-.flex_pagination {
-  display: flex;
-  justify-content: space-between;
-  width: 1055px;
-  padding-left: 73px;
-  box-sizing: border-box;
-}
-
-.pagination {
-  margin-right: 210px;
-  min-width: 460px;
-}
-
-.pagination_item {
-  display: inline;
-  margin-left: 8px;
-  margin-top: 20px;
 }
 
 /*заголовки отелей*/
@@ -1024,6 +1040,7 @@ input[type="email"] {
 
 .container_filter_button {
   display: flex;
+  flex-wrap: wrap;
   justify-content: right;
   margin-left: 78px;
 }
