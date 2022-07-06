@@ -95,6 +95,7 @@ body {
 
 /* навигация шапки*/
 .navigation_item_link {
+  position: relative;
   display: block;
   padding: 20px 17px;
   font-family: "PT Sans", sans-serif;
@@ -128,6 +129,51 @@ body {
   min-height: 66px;
   text-decoration: none;
   text-transform: uppercase;
+}
+
+/*активные пункты меню*/
+.navigation_link_active::before {
+  position: absolute;
+  width: 68px;
+  height: 2px;
+  bottom: 0;
+  content: "";
+  background-color: #756257;
+}
+
+.navigation_link_active_catalog::before {
+  position: absolute;
+  display: block;
+  width: 93px;
+  height: 2px;
+  margin-top: 46px;
+  content: "";
+  background-color: #756257;
+}
+
+/*кружочек в избранном*/
+.navigation_item_ellipse{
+  position: relative;
+}
+
+.navigation_ellipse::before {
+  display: flex;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  margin-left: 26px;
+  margin-bottom: 16px;
+  border-radius: 10px;
+  background-color: #7DB54F;
+  content: "12";
+  color: #FFFFFF;
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 13px;
+  justify-content: center;
+  align-items: center;
 }
 
 .header_button {
@@ -347,12 +393,14 @@ body {
 .search {
   padding-top: 92px;
   padding-bottom: 92px;
+  margin-top: 10px;
+  margin-bottom: 2px;
 }
 
 /*поиск - заголовок*/
 .search_title {
   margin-top: 0;
-  padding-bottom: 30px;
+  padding: 0;
   padding-left: 452px;
   padding-right: 452px;
   font-family: inherit;
@@ -367,7 +415,8 @@ body {
 
 /*поиск - описание*/
 .search_description {
-  margin-top: 0;
+  margin: 0;
+  margin-bottom: 2px;
   padding-bottom: 56px;
   padding-left: 304px;
   padding-right: 304px;
@@ -393,7 +442,7 @@ body {
   text-transform: uppercase;
   color: #FFFFFF;
   background: #756157;
-  min-width: 574px;
+  min-width: 552px;
   margin-right: 313px;
   margin-left: 313px;
   border-radius: 4px;
@@ -420,7 +469,6 @@ body {
 .subscribe_title {
   margin-top: 0;
   padding-top: 94px;
-  padding-bottom: 30px;
   padding-left: 398px;
   padding-right: 398px;
   font-family: inherit;
@@ -436,7 +484,7 @@ body {
 /*описание формы*/
 .subscribe_description {
   margin-top: 0;
-  padding-bottom: 46px;
+  padding-bottom: 30px;
   padding-left: 362px;
   padding-right: 362px;
   font-family: inherit;
@@ -456,7 +504,7 @@ input[type="email"] {
   font-size: 18px;
   line-height: 21px;
   text-align: left;
-  width: 600px;
+  width: 580px;
   height: 60px;
   border-radius: 10px 0 0 10px;
   color: #000000;
@@ -509,8 +557,10 @@ input[type="email"] {
 }
 
 .footer_contact {
+  width: 720px;
   padding-top: 5px;
   padding-bottom: 5px;
+  padding-left: 142px;
 }
 
 /*размеры для футера (флекс)*/
@@ -580,7 +630,8 @@ input[type="email"] {
 
 /*заголовок фильтрации*/
 .inner_header_title {
-  margin-top: 0;
+  margin: 0;
+  margin-bottom: 10px;
   font-family: inherit;
   font-style: normal;
   font-weight: 700;
@@ -610,7 +661,7 @@ input[type="email"] {
 }
 
 .breadcrumbs_item_link_home {
-  padding-right: 10px;
+  padding-right: 6px;
 }
 
 .breadcrumbs_arrow {
@@ -731,6 +782,19 @@ input[type="email"] {
   margin-top: 0;
 }
 
+.hotel_card_description_right {
+  margin-left: 20px;
+  min-width: 140px;
+  padding-bottom: 16px;
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
+  margin-top: 0;
+}
+
 /*кнопка подробнее*/
 .hotel_card_button {
   display: flex;
@@ -753,6 +817,7 @@ input[type="email"] {
 
 /*кнопка в избранное*/
 .button_favourites {
+  margin-left: 20px;
   padding: 0;
   font-family: inherit;
   font-style: normal;
@@ -772,6 +837,7 @@ input[type="email"] {
 
 /*кнопка в избранном зеленая*/
 .button_favourites_green {
+  margin-left: 20px;
   padding: 0;
   font-family: inherit;
   font-style: normal;
@@ -800,7 +866,7 @@ input[type="email"] {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-right: 10px;
+  margin-left: 20px;
   margin-top: 16px;
   margin-bottom: 16px;
   font-family: inherit;
@@ -838,7 +904,8 @@ input[type="email"] {
   display: flex;
   flex-wrap: wrap;
   box-sizing: border-box;
-  padding: 12px 18px;
+  justify-content: center;
+  align-content: center;
   font-family: inherit;
   font-style: normal;
   font-size: 20px;
@@ -854,7 +921,7 @@ input[type="email"] {
   color: #ffffff;
   border: 1px solid #82B3D3;
   text-decoration: none;
-  margin-left: 8px;
+  margin-right: 8px;
   margin-top: 20px;
 }
 
@@ -862,6 +929,45 @@ input[type="email"] {
   background: #F2F2F2;
   color: #000000;
   border: 1px solid #F2F2F2;
+}
+
+/*заголовки отелей*/
+
+.number_page {
+  display: block;
+  min-width: 175px;
+  min-height: 22px;
+  margin-right: 52px;
+  padding-top: 38px;
+}
+
+.select_sorting_title {
+  display: block;
+  min-width: 338px;
+  margin: 0;
+  margin-top: 8px;
+  padding-left: 72px;
+  padding-right: 192px;
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.select_sorting {
+  width: 290px;
+  padding: 0 16px;
+  border: 2px solid #E5E5E5;
+  border-radius: 4px;
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
 }
 
 .number_page,
@@ -875,8 +981,13 @@ input[type="email"] {
 }
 
 .select_control_number {
+  display: block;
   border: 2px solid #E5E5E5;
   border-radius: 4px;
+  min-width: 160px;
+  height: 52px;
+  margin-top: 20px;
+  padding-left: 12px;
 }
 
 
@@ -896,8 +1007,24 @@ input[type="email"] {
   color: rgba(0, 0, 0, 0.3);
 }
 
+.select_sorting:hover,
+.select_sorting:focus {
+  border: 2px solid #68A2CA;
+  cursor: pointer;
+  outline: none;
+}
+
+.select_sorting:active {
+  border: 2px solid #3F5E72;
+}
+
+.select_sorting:disabled {
+  border: 2px solid rgba(0, 0, 0, 0.3);
+  color: rgba(0, 0, 0, 0.3);
+}
+
 .subscribe_catalog {
-  padding-top: 94px;
+  padding-top: 118px;
   padding-bottom: 94px;
 }
 
@@ -932,65 +1059,6 @@ input[type="email"] {
   color: #333333;
 }
 
-/*заголовки отелей*/
-
-.number_page {
-  display: block;
-  min-width: 175px;
-  min-height: 22px;
-  margin-right: 52px;
-  padding-top: 16px;
-}
-
-.select_control_number {
-  min-width: 160px;
-  padding: 14px 20px;
-}
-
-.select_sorting_title {
-  display: block;
-  min-width: 338px;
-  margin: 0;
-  padding-left: 72px;
-  padding-right: 192px;
-  font-family: inherit;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 30px;
-  line-height: 36px;
-  text-transform: uppercase;
-  text-align: center;
-}
-
-.select_sorting {
-  width: 290px;
-  padding: 12px 20px;
-  border: 2px solid #E5E5E5;
-  border-radius: 4px;
-  font-family: inherit;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 21px;
-  color: #333333;
-}
-
-.select_sorting:hover,
-.select_sorting:focus {
-  border: 2px solid #68A2CA;
-  cursor: pointer;
-  outline: none;
-}
-
-.select_sorting:active {
-  border: 2px solid #3F5E72;
-}
-
-.select_sorting:disabled {
-  border: 2px solid rgba(0, 0, 0, 0.3);
-  color: rgba(0, 0, 0, 0.3);
-}
-
 .flex_filter {
   display: flex;
   flex-wrap: wrap;
@@ -1004,11 +1072,12 @@ input[type="email"] {
   column-gap: 18px;
   margin-left: 73px;
   margin-top: 56px;
-  margin-bottom: 96px;
+  margin-bottom: 74px;
 }
 
 .hotel_card {
   padding: 20px;
+  padding-bottom: 6px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -1068,7 +1137,7 @@ input[type="email"] {
 
 .search_hotel {
   margin-right: 70px;
-  margin-top: 62px;
+  margin-top: 54px;
 }
 
 .container_star_svg {
@@ -1081,7 +1150,7 @@ input[type="email"] {
 }
 
 .star_svg:not(:last-child) {
-  padding-right: 6px;
+  padding-right: 2px;
 }
 
 /*состояния коричневых кнопок*/
@@ -1230,48 +1299,6 @@ input[type="email"] {
   border-color: #ea5454;
 }
 
-/*активные пункты меню*/
-.navigation_link_active::before {
-  position: absolute;
-  width: 68px;
-  height: 2px;
-  margin-left: 16px;
-  margin-top: 66px;
-  content: "";
-  background-color: #756257;
-}
-
-.navigation_link_active_catalog::before {
-  position: absolute;
-  display: block;
-  width: 93px;
-  height: 2px;
-  margin-top: 46px;
-  content: "";
-  background-color: #756257;
-}
-
-/*кружочек в избранном*/
-.navigation_ellipse::before {
-  display: flex;
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  margin-left: 26px;
-  margin-bottom: 16px;
-  border-radius: 10px;
-  background-color: #7DB54F;
-  content: "12";
-  color: #FFFFFF;
-  font-family: inherit;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 10px;
-  line-height: 13px;
-  justify-content: center;
-  align-items: center;
-}
-
 /*полоска после карточек отелей*/
 .hotel_list::before {
   position: absolute;
@@ -1297,7 +1324,7 @@ input[type="email"] {
 }
 
 .range_wrapper_inputs {
-  margin-bottom: 32px;
+  margin-bottom: 26px;
 }
 
 .container_button {
@@ -1321,6 +1348,7 @@ input[type="email"] {
   border-style: none;
   padding: 0;
   margin: 0;
+  padding-left: 2px;
 }
 
 .catalog_filter_group_two {
@@ -1328,6 +1356,7 @@ input[type="email"] {
   border-style: none;
   padding: 0;
   margin: 0;
+  padding-left: 4px;
 }
 
 
@@ -1447,7 +1476,7 @@ input[type="email"] {
 .label_text {
   position: absolute;
   top: 15px;
-  left: 104px;
+  left: 108px;
   color: #FFFFFF;
   opacity: 0.3;
   cursor: pointer;
@@ -1526,7 +1555,7 @@ input[type="email"] {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.8);
-  display: none;
+display: none;
 }
 
 .modal {
@@ -1585,7 +1614,7 @@ input[type="email"] {
   text-transform: uppercase;
   color: #000000;
   margin: 0;
-  margin-bottom: 56px;
+  margin-bottom: 58px;
 }
 
 .flex_form_arrival,
@@ -1615,19 +1644,27 @@ input[type="email"] {
 
 .arrival_date {
   margin-right: 42px;
+  width: 113px;
+  min-height: 26px;
 }
 
 .departure_date {
   margin-right: 36px;
+  width: 119px;
+  min-height: 26px;
 }
 
 .number_adults_label {
   margin-right: 64px;
+  width: 90px;
+  min-height: 26px;
 }
 
 .number_children_label {
   position: relative;
   margin-left: 2px;
+  width: 54px;
+  min-height: 50px;
 }
 
 /*подписи под импутами*/
@@ -1641,7 +1678,7 @@ input[type="email"] {
   align-items: flex-end;
   color: #FF5757;
   margin-left: 155px;
-  margin-top: 0;
+  margin-top: 4px;
   padding: 0;
 }
 
@@ -1668,7 +1705,7 @@ input[type="email"] {
   align-items: center;
   color: #000000;
   width: 396px;
-  height: 50px;
+  height: 46px;
   background: #F2F2F2;
   border-radius: 4px;
   border: 3px solid #F2F2F2;
