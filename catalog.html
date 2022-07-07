@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="favicon.ico">
   </head>
 
   <body>
@@ -12,7 +13,7 @@
     <div class="container">
       <header class="page_header">
         <nav class="navigation">
-          <a class="navigation_logo" href="https://htmlacademy.ru/">
+          <a href="https://htmlacademy.ru/">
             <img class="navigation_page_logo" alt="Логотип Седона." src="images/logo_sedona.svg" width="139"
               height="70">
           </a>
@@ -62,7 +63,7 @@
         </nav>
       </header>
 
-      <main class="main_inner">
+      <main>
         <!--хлебные крошки-->
         <div class="background_catalog">
           <header class="main_inner_filter">
@@ -141,7 +142,8 @@
                 <ul class="catalog_filter_list">
                   <li class="catalog_filter_item">
                     <label class="control">
-                      <input class="visually_hidden control_input" type="radio" name="type_housing" value="hotel" checked>Гостиница
+                      <input class="visually_hidden control_input" type="radio" name="type_housing" value="hotel"
+                        checked>Гостиница
                       <span class="control_mark">
                       </span>
                     </label>
@@ -157,7 +159,8 @@
 
                   <li class="catalog_filter_item">
                     <label class="control">
-                      <input class="visually_hidden control_input" type="radio" name="type_housing" value="apartaments">Апартаменты
+                      <input class="visually_hidden control_input" type="radio" name="type_housing"
+                        value="apartaments">Апартаменты
                       <span class="control_mark">
                       </span>
                     </label>
@@ -171,13 +174,19 @@
                 </legend>
 
                 <div class="range_wrapper_inputs">
-                  <label class="catalog_filter_label"><span class="label_text">от</span>
+                  <label class="catalog_filter_label">
+                    <span class="label_text">
+                      от
+                    </span>
                     <input class="range_input range_input_min" type="number" value="0" name="min_price"
-                      style="width: 103px">
+                      style="width: 104px">
                   </label>
-                  <label class="catalog_filter_label"><span class="label_text">до</span>
+                  <label class="catalog_filter_label">
+                    <span class="label_text">
+                      до
+                    </span>
                     <input class="range_input range_input_max" type="number" value="9000" name="max_price"
-                      style="width: 103px">
+                      style="width: 104px">
                   </label>
                 </div>
 
@@ -269,8 +278,8 @@
               <span class="hotel_card_description">
                 Гостиница
               </span>
-              <span class="hotel_card_description">
-                От 4000
+              <span class="hotel_card_description_right">
+                От 4000 ₽
               </span>
               <br>
               <a class="button_states_brown hotel_card_button" href="#">
@@ -308,7 +317,7 @@
               <span class="hotel_card_description">
                 Гостиница
               </span>
-              <span class="hotel_card_description">
+              <span class="hotel_card_description_right">
                 От 5000 ₽
               </span>
               <br>
@@ -347,7 +356,7 @@
               <span class="hotel_card_description">
                 Гостиница
               </span>
-              <span class="hotel_card_description">
+              <span class="hotel_card_description_right">
                 От 2500 ₽
               </span>
               <br>
@@ -383,7 +392,7 @@
               <span class="hotel_card_description">
                 Гостиница
               </span>
-              <span class="hotel_card_description">
+              <span class="hotel_card_description_right">
                 От 1500 ₽
               </span>
               <br>

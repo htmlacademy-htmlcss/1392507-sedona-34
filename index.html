@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="favicon.ico">
   </head>
 
   <body>
@@ -12,13 +13,13 @@
     <div class="container">
       <header class="page_header">
         <nav class="navigation">
-          <a class="navigation_logo" href="https://htmlacademy.ru/">
+          <a href="https://htmlacademy.ru/">
             <img class="navigation_page_logo" alt="Логотип Седона." src="images/logo_sedona.svg" width="139"
               height="70">
           </a>
           <ul class="navigation_list">
-            <li class="navigation_item navigation_link_active">
-              <a class="navigation_item_link" href="index.html">
+            <li class="navigation_item">
+              <a class="navigation_item_link navigation_link_active" href="index.html">
                 Главная
               </a>
             </li>
@@ -42,7 +43,7 @@
                 </span>
               </a>
             </li>
-            <li class="navigation_item">
+            <li class="navigation_item navigation_item_ellipse">
               <a class="navigation_item_link_user navigation_ellipse" href="#">
                 <span class="visually_hidden">
                   Избранное
@@ -62,7 +63,7 @@
         </nav>
       </header>
       <!--о седоне-->
-      <main class="main_index">
+      <main>
         <div class="main_image">
           <img class="main_image_welcome" alt="Добро пожаловать в Седону." src="images/welcome.svg" width="458"
             height="352">
@@ -75,7 +76,7 @@
           Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!
         </p>
         <!--Преимущества-->
-        <section class="advantages">
+        <section>
           <h2 class="visually_hidden">
             Преимущества
           </h2>
@@ -163,7 +164,7 @@
             <!--голубой фон с прозрачностью 12%-->
             <li class="advantages_item opacity_blue">
               <div class="flex_advantages">
-                <h3 class="advantages_title">
+                <h3 class="advantages_title margin">
                   Небольшая<br>
                   площадь
                 </h3>
@@ -180,11 +181,11 @@
             <!--голубой фон с прозрачностью 20%-->
             <li class="advantages_item opacity_blue_darker">
               <div class="flex_advantages">
-                <h3 class="advantages_title">
+                <h3 class="advantages_title margin">
                   Красивая<br>
                   дорога
                 </h3>
-                <p class="advantages_description">
+                <p class="advantages_description ">
                   — №4 —
                 </p>
                 <p class="advantages_description">
@@ -197,7 +198,7 @@
             <!--голубой фон с прозрачностью 12%-->
             <li class="advantages_item opacity_blue">
               <div class="flex_advantages">
-                <h3 class="advantages_title">
+                <h3 class="advantages_title margin">
                   Мало<br>
                   туристов
                 </h3>
@@ -323,7 +324,7 @@
       </footer>
     </div>
 
-    <div class=" modal_container">
+    <div class="modal_container">
       <div class="modal">
         <button class="modal_close_button">
           <svg class="modal_close_svg" width="13" height="13" viewBox="0 0 13 13" xmlns="http://www.w3.org/2000/svg">
@@ -341,23 +342,27 @@
           <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
             <div class="flex_form_arrival">
               <label class="arrival_date" for="arrival">
-                Дата Заезда:</label>
-              <input class="text_input" type="text" id="arrival" value="27 апреля 2020" placeholder="Укажите дату">
+                Дата Заезда:
+              </label>
+              <input class="text_input arrival_position_calendar" type="text" id="arrival" value="27 апреля 2020"
+                placeholder="Укажите дату">
               <button class="calendar_arrival" type="button">
               </button>
               <span class="visually_hidden">
                 Календарь
               </span>
-              <p class="data_text_red">
-                Мы не можем отправить вас в прошлое.
-              </p>
             </div>
+            <p class="data_text_red">
+              Мы не можем отправить вас в прошлое.
+            </p>
+
 
             <div class="flex_form_departure">
               <label class="departure_date" for="departure">
                 Дата Выезда:
               </label>
-              <input class="text_input" type="text" id="departure" value="1 сентября 2021" placeholder="Укажите дату">
+              <input class="text_input departure_position_calendar" type="text" id="departure" value="1 сентября 2021"
+                placeholder="Укажите дату">
               <button class="calendar_departure" type="button">
               </button>
               <span class="visually_hidden">
